@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="RemoveBook.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="RemoveBook.Designer.cs">
       <DependentUpon>RemoveBook.cs</DependentUpon>
@@ -91,6 +91,9 @@
     <Compile Include="User Control _ Sach\ViewBook.Designer.cs">
       <DependentUpon>ViewBook.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RemoveBook.resx">
+      <DependentUpon>RemoveBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Control _ Sach\AddBook.resx">
       <DependentUpon>AddBook.cs</DependentUpon>
     </EmbeddedResource>

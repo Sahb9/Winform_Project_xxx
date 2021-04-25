@@ -31,5 +31,10 @@ namespace Winform_moi
         {
             viewBook1.BringToFront();
         }
+
+        private void ButtonRemove_Click(object sender, EventArgs e)
+        {
+            removeBook1.BringToFront();
+        }
     }
 }

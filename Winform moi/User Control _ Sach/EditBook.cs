@@ -23,6 +23,9 @@ namespace Winform_moi
         {
             string sql = "select *from ShowBook";
             guna2DataGridView1.DataSource = book.getBook(sql);
+            ComboBoxGenre.DataSource = book.getBook(sql);
+            ComboBoxGenre.DisplayMember = "Genre";
+            ComboBoxGenre.ValueMember = "Genre";
         }
 
         private void guna2DataGridView1_Click(object sender, EventArgs e)
@@ -32,6 +35,11 @@ namespace Winform_moi
             ComboBoxGenre.Text = guna2DataGridView1.CurrentRow.Cells[2].Value.ToString();
             TextBoxPrice.Text = guna2DataGridView1.CurrentRow.Cells[3].Value.ToString();
             TextBoxQuantity.Text = guna2DataGridView1.CurrentRow.Cells[4].Value.ToString();
+        }
+
+        private void ButtonUpdate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
