@@ -30,6 +30,7 @@ namespace Winform_moi
 
         private void guna2DataGridView1_Click(object sender, EventArgs e)
         {
+
             TextBoxBookID.Text = guna2DataGridView1.CurrentRow.Cells[0].Value.ToString();
             TextBoxBookName.Text = guna2DataGridView1.CurrentRow.Cells[1].Value.ToString();
             ComboBoxGenre.Text = guna2DataGridView1.CurrentRow.Cells[2].Value.ToString();
