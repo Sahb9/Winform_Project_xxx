@@ -37,10 +37,10 @@
             this.labelSearch = new System.Windows.Forms.Label();
             this.ButtonSeach = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.removeBook1 = new Winform_moi.RemoveBook();
             this.viewBook1 = new Winform_moi.ViewBook();
             this.editBook1 = new Winform_moi.EditBook();
             this.addBook1 = new Winform_moi.AddBook();
-            this.removeBook1 = new Winform_moi.RemoveBook();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -182,6 +182,14 @@
             this.guna2Panel1.Size = new System.Drawing.Size(766, 364);
             this.guna2Panel1.TabIndex = 13;
             // 
+            // removeBook1
+            // 
+            this.removeBook1.Location = new System.Drawing.Point(0, 0);
+            this.removeBook1.Name = "removeBook1";
+            this.removeBook1.Size = new System.Drawing.Size(766, 364);
+            this.removeBook1.TabIndex = 3;
+            this.removeBook1.Load += new System.EventHandler(this.removeBook1_Load);
+            // 
             // viewBook1
             // 
             this.viewBook1.Location = new System.Drawing.Point(0, -3);
@@ -202,13 +210,6 @@
             this.addBook1.Name = "addBook1";
             this.addBook1.Size = new System.Drawing.Size(766, 364);
             this.addBook1.TabIndex = 0;
-            // 
-            // removeBook1
-            // 
-            this.removeBook1.Location = new System.Drawing.Point(0, 0);
-            this.removeBook1.Name = "removeBook1";
-            this.removeBook1.Size = new System.Drawing.Size(766, 364);
-            this.removeBook1.TabIndex = 3;
             // 
             // QuanLySach
             // 
