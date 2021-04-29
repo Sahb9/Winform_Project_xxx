@@ -16,5 +16,10 @@ namespace Winform_moi
         {
             InitializeComponent();
         }
+
+        private void ViewBook_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
