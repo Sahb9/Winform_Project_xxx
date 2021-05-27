@@ -78,6 +78,7 @@
             this.guna2ButtonQLSach.Size = new System.Drawing.Size(196, 42);
             this.guna2ButtonQLSach.TabIndex = 3;
             this.guna2ButtonQLSach.Text = "Quản Lý Sách";
+            this.guna2ButtonQLSach.Click += new System.EventHandler(this.guna2ButtonQLSach_Click);
             // 
             // pictureBox1
             // 
@@ -102,16 +103,19 @@
             this.quanLySach1.Name = "quanLySach1";
             this.quanLySach1.Size = new System.Drawing.Size(833, 540);
             this.quanLySach1.TabIndex = 0;
+            this.quanLySach1.Load += new System.EventHandler(this.quanLySach1_Load);
             // 
-            // Form1
+            // QuanLyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 540);
             this.Controls.Add(this.Panel2);
             this.Controls.Add(this.Panel1);
-            this.Name = "Form1";
+            this.Name = "QuanLyForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.QuanLyForm_Load);
             this.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Panel2.ResumeLayout(false);

@@ -1,6 +1,6 @@
 ﻿namespace Winform_moi
 {
-    partial class AddBook
+    partial class ChoMuon_GiaoVien
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.buttonAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonLend = new Guna.UI2.WinForms.Guna2Button();
             this.comboBoxGenre = new Guna.UI2.WinForms.Guna2ComboBox();
             this.textBoxPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBoxID = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,7 +45,7 @@
             // 
             // guna2GroupBox1
             // 
-            this.guna2GroupBox1.Controls.Add(this.buttonAdd);
+            this.guna2GroupBox1.Controls.Add(this.buttonLend);
             this.guna2GroupBox1.Controls.Add(this.comboBoxGenre);
             this.guna2GroupBox1.Controls.Add(this.textBoxPrice);
             this.guna2GroupBox1.Controls.Add(this.textBoxID);
@@ -59,27 +59,28 @@
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(91)))), ((int)(((byte)(98)))));
             this.guna2GroupBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(3, 3);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(766, 364);
-            this.guna2GroupBox1.TabIndex = 1;
-            this.guna2GroupBox1.Text = "AddBook";
+            this.guna2GroupBox1.Size = new System.Drawing.Size(827, 534);
+            this.guna2GroupBox1.TabIndex = 2;
+            this.guna2GroupBox1.Text = "Lend Book";
             // 
-            // buttonAdd
+            // buttonLend
             // 
-            this.buttonAdd.CheckedState.Parent = this.buttonAdd;
-            this.buttonAdd.CustomImages.Parent = this.buttonAdd;
-            this.buttonAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.buttonAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonAdd.HoverState.Parent = this.buttonAdd;
-            this.buttonAdd.Location = new System.Drawing.Point(296, 239);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.ShadowDecoration.Parent = this.buttonAdd;
-            this.buttonAdd.Size = new System.Drawing.Size(181, 33);
-            this.buttonAdd.TabIndex = 5;
-            this.buttonAdd.Text = "Add";
-            this.buttonAdd.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.buttonLend.BorderRadius = 20;
+            this.buttonLend.CheckedState.Parent = this.buttonLend;
+            this.buttonLend.CustomImages.Parent = this.buttonLend;
+            this.buttonLend.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonLend.ForeColor = System.Drawing.Color.White;
+            this.buttonLend.HoverState.Parent = this.buttonLend;
+            this.buttonLend.Location = new System.Drawing.Point(324, 316);
+            this.buttonLend.Name = "buttonLend";
+            this.buttonLend.ShadowDecoration.Parent = this.buttonLend;
+            this.buttonLend.Size = new System.Drawing.Size(181, 33);
+            this.buttonLend.TabIndex = 5;
+            this.buttonLend.Text = "Lend Book";
+            this.buttonLend.Click += new System.EventHandler(this.buttonLend_Click);
             // 
             // comboBoxGenre
             // 
@@ -94,7 +95,7 @@
             this.comboBoxGenre.HoverState.Parent = this.comboBoxGenre;
             this.comboBoxGenre.ItemHeight = 30;
             this.comboBoxGenre.ItemsAppearance.Parent = this.comboBoxGenre;
-            this.comboBoxGenre.Location = new System.Drawing.Point(296, 130);
+            this.comboBoxGenre.Location = new System.Drawing.Point(324, 207);
             this.comboBoxGenre.Name = "comboBoxGenre";
             this.comboBoxGenre.ShadowDecoration.Parent = this.comboBoxGenre;
             this.comboBoxGenre.Size = new System.Drawing.Size(187, 36);
@@ -113,7 +114,7 @@
             this.textBoxPrice.FocusedState.Parent = this.textBoxPrice;
             this.textBoxPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxPrice.HoverState.Parent = this.textBoxPrice;
-            this.textBoxPrice.Location = new System.Drawing.Point(296, 172);
+            this.textBoxPrice.Location = new System.Drawing.Point(324, 249);
             this.textBoxPrice.Margin = new System.Windows.Forms.Padding(13);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.PasswordChar = '\0';
@@ -136,7 +137,7 @@
             this.textBoxID.FocusedState.Parent = this.textBoxID;
             this.textBoxID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxID.HoverState.Parent = this.textBoxID;
-            this.textBoxID.Location = new System.Drawing.Point(296, 57);
+            this.textBoxID.Location = new System.Drawing.Point(324, 134);
             this.textBoxID.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.PasswordChar = '\0';
@@ -159,7 +160,7 @@
             this.textBoxQuantity.FocusedState.Parent = this.textBoxQuantity;
             this.textBoxQuantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxQuantity.HoverState.Parent = this.textBoxQuantity;
-            this.textBoxQuantity.Location = new System.Drawing.Point(296, 204);
+            this.textBoxQuantity.Location = new System.Drawing.Point(324, 281);
             this.textBoxQuantity.Margin = new System.Windows.Forms.Padding(8);
             this.textBoxQuantity.Name = "textBoxQuantity";
             this.textBoxQuantity.PasswordChar = '\0';
@@ -172,7 +173,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(145, 57);
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(173, 134);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 21);
             this.label1.TabIndex = 0;
@@ -191,7 +193,7 @@
             this.textBoxName.FocusedState.Parent = this.textBoxName;
             this.textBoxName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxName.HoverState.Parent = this.textBoxName;
-            this.textBoxName.Location = new System.Drawing.Point(296, 95);
+            this.textBoxName.Location = new System.Drawing.Point(324, 172);
             this.textBoxName.Margin = new System.Windows.Forms.Padding(8);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.PasswordChar = '\0';
@@ -200,12 +202,12 @@
             this.textBoxName.ShadowDecoration.Parent = this.textBoxName;
             this.textBoxName.Size = new System.Drawing.Size(187, 24);
             this.textBoxName.TabIndex = 8;
-            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(145, 95);
+            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(173, 172);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 21);
             this.label2.TabIndex = 1;
@@ -214,7 +216,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(145, 135);
+            this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(173, 212);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 21);
             this.label3.TabIndex = 2;
@@ -223,7 +226,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(145, 207);
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(173, 284);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 21);
             this.label5.TabIndex = 4;
@@ -232,20 +236,21 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(145, 172);
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(173, 249);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 21);
             this.label4.TabIndex = 3;
             this.label4.Text = "Price";
             // 
-            // AddBook
+            // ChoMuon_GiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2GroupBox1);
-            this.Name = "AddBook";
-            this.Size = new System.Drawing.Size(766, 364);
-            this.Load += new System.EventHandler(this.AddBook_Load);
+            this.Name = "ChoMuon_GiaoVien";
+            this.Size = new System.Drawing.Size(833, 540);
+            this.Load += new System.EventHandler(this.ChoMuon_GiaoVien_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -255,7 +260,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
-        private Guna.UI2.WinForms.Guna2Button buttonAdd;
+        private Guna.UI2.WinForms.Guna2Button buttonLend;
         private Guna.UI2.WinForms.Guna2ComboBox comboBoxGenre;
         private Guna.UI2.WinForms.Guna2TextBox textBoxPrice;
         private Guna.UI2.WinForms.Guna2TextBox textBoxID;

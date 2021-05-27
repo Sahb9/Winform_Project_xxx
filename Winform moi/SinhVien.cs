@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Winform_moi
 {
-    public partial class QuanLyForm : Form
+    public partial class SinhVien : Form
     {
-        public QuanLyForm()
+        public SinhVien()
         {
             InitializeComponent();
         }

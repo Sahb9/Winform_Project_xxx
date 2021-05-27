@@ -10,7 +10,7 @@ namespace Winform_moi
 {
     class Database
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-LD7KLDC7\SQLEXPRESS;Initial Catalog=datawinform;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-LD7KLDC7\SQLEXPRESS02;Initial Catalog=CSDL_Winform;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         public SqlConnection getConnection
         {
             get
