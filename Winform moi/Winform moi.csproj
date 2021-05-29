@@ -51,6 +51,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SinhVien.cs" />
+    <Compile Include="Usercontrol QuanLy\QLy_GiaoVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\QLy_GiaoVien.Designer.cs">
+      <DependentUpon>QLy_GiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\QLy_SinhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\QLy_SinhVien.Designer.cs">
+      <DependentUpon>QLy_SinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_SinhVien\TinhTrang_SinhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_SinhVien\TinhTrang_SinhVien.Designer.cs">
+      <DependentUpon>TinhTrang_SinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_SinhVien\TraSach_SinhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_SinhVien\TraSach_SinhVien.Designer.cs">
+      <DependentUpon>TraSach_SinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_SinhVien\MuonSach_SinhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_SinhVien\MuonSach_SinhVien.Designer.cs">
+      <DependentUpon>MuonSach_SinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Form\SinhVienForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Form\SinhVienForm.Designer.cs">
+      <DependentUpon>SinhVienForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Giao Vien\Sach_GiaoVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Giao Vien\Sach_GiaoVien.Designer.cs">
+      <DependentUpon>Sach_GiaoVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl Giao Vien\TraSach_GiaoVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -63,10 +106,10 @@
     <Compile Include="UserControl Giao Vien\ChoMuon_GiaoVien.Designer.cs">
       <DependentUpon>ChoMuon_GiaoVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Main Form\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Main Form\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Template Class\StatisID.cs" />
@@ -111,10 +154,10 @@
     </Compile>
     <Compile Include="Template Class\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Main Usercontrol\QuanLySach.cs">
+    <Compile Include="Usercontrol QuanLy\QuanLySach.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main Usercontrol\QuanLySach.Designer.cs">
+    <Compile Include="Usercontrol QuanLy\QuanLySach.Designer.cs">
       <DependentUpon>QuanLySach.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control _ Sach\ViewBook.cs">
@@ -123,10 +166,28 @@
     <Compile Include="User Control _ Sach\ViewBook.Designer.cs">
       <DependentUpon>ViewBook.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Main Form\SinhVienForm.resx">
+      <DependentUpon>SinhVienForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrol QuanLy\QLy_GiaoVien.resx">
+      <DependentUpon>QLy_GiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrol QuanLy\QLy_SinhVien.resx">
+      <DependentUpon>QLy_SinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_SinhVien\TinhTrang_SinhVien.resx">
+      <DependentUpon>TinhTrang_SinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_SinhVien\TraSach_SinhVien.resx">
+      <DependentUpon>TraSach_SinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Giao Vien\Sach_GiaoVien.resx">
+      <DependentUpon>Sach_GiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl Giao Vien\ChoMuon_GiaoVien.resx">
       <DependentUpon>ChoMuon_GiaoVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="Main Form\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl Giao Vien\Muon_GiaoVien.resx">
@@ -157,7 +218,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Main Usercontrol\QuanLySach.resx">
+    <EmbeddedResource Include="Usercontrol QuanLy\QuanLySach.resx">
       <DependentUpon>QuanLySach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control _ Sach\ViewBook.resx">
@@ -165,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl Giao Vien\TraSach_GiaoVien.resx">
       <DependentUpon>TraSach_GiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_SinhVien\MuonSach_SinhVien.resx">
+      <DependentUpon>MuonSach_SinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
@@ -194,6 +258,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1535317867_photofunky1.gif" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\image_processing20200410-30528-18zwjq1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\issueBook.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_processing20191025-19942-14gi0n7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1535317867_photofunky2.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

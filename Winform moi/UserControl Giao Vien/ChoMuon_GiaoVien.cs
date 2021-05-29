@@ -64,12 +64,17 @@ namespace Winform_moi
                 return false;
         }
 
-        private void ChoMuon_GiaoVien_Load(object sender, EventArgs e)
+        public void ChoMuon_GiaoVien_Load(object sender, EventArgs e)
         {
             string sql = "select *from ShowcomboGenre";
             comboBoxGenre.DataSource = book.getBook(sql);
             comboBoxGenre.DisplayMember = "Genre";
             comboBoxGenre.ValueMember = "Genre";
+        }
+
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

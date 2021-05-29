@@ -27,9 +27,16 @@ namespace Winform_moi
 
         }
 
-        private void guna2ButtonQLSach_Click(object sender, EventArgs e)
+        private void buttonQLSinhVien_Click(object sender, EventArgs e)
         {
+            qLy_SinhVien1.QLy_SinhVien_Load(sender, e);
+            qLy_SinhVien1.BringToFront();
+        }
 
+        private void buttonTeacher_Click(object sender, EventArgs e)
+        {
+            qLy_GiaoVien1.QLy_GiaoVien_Load(sender, e);
+            qLy_GiaoVien1.BringToFront();
         }
     }
 }

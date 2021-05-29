@@ -65,6 +65,7 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(827, 534);
             this.guna2GroupBox1.TabIndex = 2;
             this.guna2GroupBox1.Text = "Lend Book";
+            this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
             // 
             // buttonLend
             // 

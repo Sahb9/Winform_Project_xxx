@@ -16,8 +16,9 @@ namespace Winform_moi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new QuanLyForm());
-            Application.Run(new GiaoVienForm());
+            Application.Run(new QuanLyForm());
+            //Application.Run(new GiaoVienForm());
+            //Application.Run(new SinhVienForm());
         }
     }
 }

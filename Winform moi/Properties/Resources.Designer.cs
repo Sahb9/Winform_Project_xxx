@@ -83,6 +83,16 @@ namespace Winform_moi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1535317867_photofunky2 {
+            get {
+                object obj = ResourceManager.GetObject("1535317867_photofunky2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AlarmingCharmingAmericanavocet_max_1mb {
             get {
                 object obj = ResourceManager.GetObject("AlarmingCharmingAmericanavocet-max-1mb", resourceCulture);
@@ -106,6 +116,36 @@ namespace Winform_moi.Properties {
         internal static System.Drawing.Bitmap giphy {
             get {
                 object obj = ResourceManager.GetObject("giphy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_processing20191025_19942_14gi0n7 {
+            get {
+                object obj = ResourceManager.GetObject("image_processing20191025-19942-14gi0n7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_processing20200410_30528_18zwjq1 {
+            get {
+                object obj = ResourceManager.GetObject("image_processing20200410-30528-18zwjq1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap issueBook {
+            get {
+                object obj = ResourceManager.GetObject("issueBook", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

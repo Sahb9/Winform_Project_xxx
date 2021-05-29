@@ -17,7 +17,7 @@ namespace Winform_moi
             InitializeComponent();
         }
         Book book = new Book();
-        private void TraSach_GiaoVien_Load(object sender, EventArgs e)
+        public void TraSach_GiaoVien_Load(object sender, EventArgs e)
         {
             loadForm();
             setUpdata();
@@ -30,12 +30,11 @@ namespace Winform_moi
         public void setUpdata()
         {
             dataGridView2.ColumnCount = 2;
-
             dataGridView2.Columns[0].Name = "Book Name";
             dataGridView2.Columns[1].Name = "Quantity";
         }
        
-        private void buttonAdd_Click(object sender, EventArgs e)
+        public void buttonAdd_Click(object sender, EventArgs e)
         {
             string bookname = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             string sl = dataGridView1.CurrentRow.Cells[1].Value.ToString();
@@ -51,33 +50,43 @@ namespace Winform_moi
 
         private void buttonReturn_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(dataGridView1.Rows.Count.ToString());
             int kt = 1;
-                for (int i = 0; i < dataGridView2.Rows.Count - 1; i++)
+            DateTime dateMuon = dateTimePicker1.Value;
+            for (int i = 0; i < dataGridView2.Rows.Count - 1; i++)
+            {
+                string bookname = dataGridView2.Rows[i].Cells[0].Value.ToString();
+                int slg = Convert.ToInt32(dataGridView2.Rows[i].Cells[1].Value.ToString());
+                if (book.traSach(191100, dateMuon, bookname, slg))
                 {
-                    string bookname = dataGridView2.Rows[i].Cells[0].Value.ToString();
-                    int slg = Convert.ToInt32(dataGridView2.Rows[i].Cells[1].Value.ToString());
-                    if (book.traSach(191100, bookname, slg))
-                    {
-                        kt = 1;
-                    }
-                    else
-                        kt = 0;
-
+                    kt = 1;
                 }
-            if (kt==1)
+                else
+                    kt = 0;
+
+            }
+            if (kt == 1)
             {
                 MessageBox.Show("Return to the libary Success", "Return Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loadForm();
+                dataGridView2.Rows.Clear();
             }
             else
+            {
                 MessageBox.Show("Fail", "Return Information ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadForm();
+                dataGridView2.Rows.Clear();
+            }
         }
 
         private void linkLabelFresh_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             loadForm();
             dataGridView2.Rows.Clear();
+        }
+
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

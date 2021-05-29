@@ -117,7 +117,7 @@ namespace Winform_moi
         public DataTable soSachtrongThuVien(string sql)     //tên thể loại
         {
             SqlCommand command = new SqlCommand("exec Sosachtrongkho @tensach", db.getConnection);
-            command.Parameters.Add("@loai", SqlDbType.VarChar).Value = sql;
+            command.Parameters.Add("@tensach", SqlDbType.VarChar).Value = sql;
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();
             adapter.Fill(table);
@@ -145,27 +145,54 @@ namespace Winform_moi
 
 
             db.openConnection();
-            if ((command.ExecuteNonQuery() == -1))
-            {
-                db.closeConnection();
-                return true;
-            }
-            else
-            {
-                db.closeConnection();
-                return false;
-            }
+            command.ExecuteNonQuery();
+            return true;
+            //if ((command.ExecuteNonQuery() == -1))
+            //{
+            //    db.closeConnection();
+            //    return true;
+            //}
+            //else
+            //{
+            //    db.closeConnection();
+            //    return false;
+            //}
 
         }
-        public bool traSach(int maid,string tensach, int sl)
+        public bool traSach(int maid,DateTime ngaytra,string tensach, int sl)
         {
            
-            SqlCommand command = new SqlCommand("exec  TraSach_ @maid,@ten,@sl", db.getConnection);
+            SqlCommand command = new SqlCommand("exec  TraSach_ @maid,@date,@ten,@sl", db.getConnection);
             command.Parameters.Add("@maid", SqlDbType.Int).Value = maid;
+            command.Parameters.Add("@date", SqlDbType.DateTime).Value = ngaytra;
             command.Parameters.Add("@ten", SqlDbType.VarChar).Value = tensach;
             command.Parameters.Add("@sl", SqlDbType.Int).Value = sl;
+            db.openConnection();
+            command.ExecuteNonQuery();
+            return true;
+            //if ((command.ExecuteNonQuery() == -1))
+            //{
+            //    db.closeConnection();
+            //    return true;
+            //}
+            //else
+            //{
+            //    db.closeConnection();
+            //    return false;
+            //}
+        }
+        public bool phatSach(int maid, DateTime ngaytra, string tensach, int sl,string dieukien)
+        {
+            SqlCommand command = new SqlCommand("exec   Phat @maid,@date,@ten,@sl,@dk", db.getConnection);
+            command.Parameters.Add("@maid", SqlDbType.Int).Value = maid;
+            command.Parameters.Add("@date", SqlDbType.DateTime).Value = ngaytra;
+            command.Parameters.Add("@ten", SqlDbType.VarChar).Value = tensach;
+            command.Parameters.Add("@sl", SqlDbType.Int).Value = sl;
+            command.Parameters.Add("@dk", SqlDbType.VarChar).Value = dieukien;
 
             db.openConnection();
+            //command.ExecuteNonQuery();
+            //return true;
             if ((command.ExecuteNonQuery() == -1))
             {
                 db.closeConnection();
