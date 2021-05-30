@@ -222,6 +222,7 @@
             this.Controls.Add(this.guna2Panel2);
             this.Name = "QuanLySach";
             this.Size = new System.Drawing.Size(833, 540);
+            this.Load += new System.EventHandler(this.QuanLySach_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -52,7 +52,7 @@ namespace Winform_moi
                 int slg = Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value.ToString());
                 DateTime dateMuon = DateTime.ParseExact(dataGridView1.Rows[i].Cells[3].Value.ToString(), "dd/MM/yyyy", null);
                 DateTime dateTra = DateTime.ParseExact(dataGridView1.Rows[i].Cells[4].Value.ToString(), "dd/MM/yyyy", null);  
-                if (book.muonsach(bookname,191100, dateMuon, dateTra, slg, "dangmuon"))
+                if (book.muonsach(bookname,990, dateMuon, dateTra, slg, "dangmuon"))
                 {
                     kt = 1;
            

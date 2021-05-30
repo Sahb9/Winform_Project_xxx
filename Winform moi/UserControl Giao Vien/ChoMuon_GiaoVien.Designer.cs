@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonLend = new Guna.UI2.WinForms.Guna2Button();
             this.comboBoxGenre = new Guna.UI2.WinForms.Guna2ComboBox();
             this.textBoxPrice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,32 +42,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2GroupBox1.SuspendLayout();
+            this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.label = new System.Windows.Forms.Label();
+            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // guna2GroupBox1
-            // 
-            this.guna2GroupBox1.Controls.Add(this.buttonLend);
-            this.guna2GroupBox1.Controls.Add(this.comboBoxGenre);
-            this.guna2GroupBox1.Controls.Add(this.textBoxPrice);
-            this.guna2GroupBox1.Controls.Add(this.textBoxID);
-            this.guna2GroupBox1.Controls.Add(this.textBoxQuantity);
-            this.guna2GroupBox1.Controls.Add(this.label1);
-            this.guna2GroupBox1.Controls.Add(this.textBoxName);
-            this.guna2GroupBox1.Controls.Add(this.label2);
-            this.guna2GroupBox1.Controls.Add(this.label3);
-            this.guna2GroupBox1.Controls.Add(this.label5);
-            this.guna2GroupBox1.Controls.Add(this.label4);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(91)))), ((int)(((byte)(98)))));
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(3, 3);
-            this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(827, 534);
-            this.guna2GroupBox1.TabIndex = 2;
-            this.guna2GroupBox1.Text = "Lend Book";
-            this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
             // 
             // buttonLend
             // 
@@ -75,13 +57,13 @@
             this.buttonLend.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.buttonLend.ForeColor = System.Drawing.Color.White;
             this.buttonLend.HoverState.Parent = this.buttonLend;
-            this.buttonLend.Location = new System.Drawing.Point(324, 316);
+            this.buttonLend.Location = new System.Drawing.Point(99, 360);
             this.buttonLend.Name = "buttonLend";
             this.buttonLend.ShadowDecoration.Parent = this.buttonLend;
             this.buttonLend.Size = new System.Drawing.Size(181, 33);
-            this.buttonLend.TabIndex = 5;
+            this.buttonLend.TabIndex = 17;
             this.buttonLend.Text = "Lend Book";
-            this.buttonLend.Click += new System.EventHandler(this.buttonLend_Click);
+            this.buttonLend.Click += new System.EventHandler(this.buttonLend_Click_1);
             // 
             // comboBoxGenre
             // 
@@ -96,11 +78,11 @@
             this.comboBoxGenre.HoverState.Parent = this.comboBoxGenre;
             this.comboBoxGenre.ItemHeight = 30;
             this.comboBoxGenre.ItemsAppearance.Parent = this.comboBoxGenre;
-            this.comboBoxGenre.Location = new System.Drawing.Point(324, 207);
+            this.comboBoxGenre.Location = new System.Drawing.Point(101, 110);
             this.comboBoxGenre.Name = "comboBoxGenre";
             this.comboBoxGenre.ShadowDecoration.Parent = this.comboBoxGenre;
             this.comboBoxGenre.Size = new System.Drawing.Size(187, 36);
-            this.comboBoxGenre.TabIndex = 11;
+            this.comboBoxGenre.TabIndex = 22;
             // 
             // textBoxPrice
             // 
@@ -115,7 +97,7 @@
             this.textBoxPrice.FocusedState.Parent = this.textBoxPrice;
             this.textBoxPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxPrice.HoverState.Parent = this.textBoxPrice;
-            this.textBoxPrice.Location = new System.Drawing.Point(324, 249);
+            this.textBoxPrice.Location = new System.Drawing.Point(101, 152);
             this.textBoxPrice.Margin = new System.Windows.Forms.Padding(13);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.PasswordChar = '\0';
@@ -123,7 +105,7 @@
             this.textBoxPrice.SelectedText = "";
             this.textBoxPrice.ShadowDecoration.Parent = this.textBoxPrice;
             this.textBoxPrice.Size = new System.Drawing.Size(187, 24);
-            this.textBoxPrice.TabIndex = 10;
+            this.textBoxPrice.TabIndex = 21;
             // 
             // textBoxID
             // 
@@ -138,7 +120,7 @@
             this.textBoxID.FocusedState.Parent = this.textBoxID;
             this.textBoxID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxID.HoverState.Parent = this.textBoxID;
-            this.textBoxID.Location = new System.Drawing.Point(324, 134);
+            this.textBoxID.Location = new System.Drawing.Point(101, 37);
             this.textBoxID.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.PasswordChar = '\0';
@@ -146,7 +128,7 @@
             this.textBoxID.SelectedText = "";
             this.textBoxID.ShadowDecoration.Parent = this.textBoxID;
             this.textBoxID.Size = new System.Drawing.Size(187, 24);
-            this.textBoxID.TabIndex = 7;
+            this.textBoxID.TabIndex = 18;
             // 
             // textBoxQuantity
             // 
@@ -161,7 +143,7 @@
             this.textBoxQuantity.FocusedState.Parent = this.textBoxQuantity;
             this.textBoxQuantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxQuantity.HoverState.Parent = this.textBoxQuantity;
-            this.textBoxQuantity.Location = new System.Drawing.Point(324, 281);
+            this.textBoxQuantity.Location = new System.Drawing.Point(101, 184);
             this.textBoxQuantity.Margin = new System.Windows.Forms.Padding(8);
             this.textBoxQuantity.Name = "textBoxQuantity";
             this.textBoxQuantity.PasswordChar = '\0';
@@ -169,16 +151,18 @@
             this.textBoxQuantity.SelectedText = "";
             this.textBoxQuantity.ShadowDecoration.Parent = this.textBoxQuantity;
             this.textBoxQuantity.Size = new System.Drawing.Size(187, 24);
-            this.textBoxQuantity.TabIndex = 9;
+            this.textBoxQuantity.TabIndex = 20;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(173, 134);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(9, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 21);
-            this.label1.TabIndex = 0;
+            this.label1.Size = new System.Drawing.Size(57, 15);
+            this.label1.TabIndex = 12;
             this.label1.Text = "Book ID";
             // 
             // textBoxName
@@ -194,7 +178,7 @@
             this.textBoxName.FocusedState.Parent = this.textBoxName;
             this.textBoxName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxName.HoverState.Parent = this.textBoxName;
-            this.textBoxName.Location = new System.Drawing.Point(324, 172);
+            this.textBoxName.Location = new System.Drawing.Point(101, 75);
             this.textBoxName.Margin = new System.Windows.Forms.Padding(8);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.PasswordChar = '\0';
@@ -202,65 +186,165 @@
             this.textBoxName.SelectedText = "";
             this.textBoxName.ShadowDecoration.Parent = this.textBoxName;
             this.textBoxName.Size = new System.Drawing.Size(187, 24);
-            this.textBoxName.TabIndex = 8;
+            this.textBoxName.TabIndex = 19;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(173, 172);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(9, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 21);
-            this.label2.TabIndex = 1;
+            this.label2.Size = new System.Drawing.Size(81, 15);
+            this.label2.TabIndex = 13;
             this.label2.Text = "Book Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(173, 212);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(9, 115);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 21);
-            this.label3.TabIndex = 2;
+            this.label3.Size = new System.Drawing.Size(46, 15);
+            this.label3.TabIndex = 14;
             this.label3.Text = "Genre";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(173, 284);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(9, 187);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 21);
-            this.label5.TabIndex = 4;
+            this.label5.Size = new System.Drawing.Size(59, 15);
+            this.label5.TabIndex = 16;
             this.label5.Text = "Quantity";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(173, 249);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(9, 152);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 21);
-            this.label4.TabIndex = 3;
+            this.label4.Size = new System.Drawing.Size(40, 15);
+            this.label4.TabIndex = 15;
             this.label4.Text = "Price";
+            // 
+            // dataGridView1
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.ColumnHeadersHeight = 25;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView1.Location = new System.Drawing.Point(353, 98);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(454, 375);
+            this.dataGridView1.TabIndex = 23;
+            this.dataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.ThemeStyle.HeaderStyle.Height = 25;
+            this.dataGridView1.ThemeStyle.ReadOnly = false;
+            this.dataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridView1.ThemeStyle.RowsStyle.Height = 22;
+            this.dataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Location = new System.Drawing.Point(315, 13);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(190, 39);
+            this.label.TabIndex = 24;
+            this.label.Text = "Lend Book";
+            // 
+            // guna2ShadowPanel1
+            // 
+            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.comboBoxGenre);
+            this.guna2ShadowPanel1.Controls.Add(this.textBoxPrice);
+            this.guna2ShadowPanel1.Controls.Add(this.textBoxID);
+            this.guna2ShadowPanel1.Controls.Add(this.textBoxQuantity);
+            this.guna2ShadowPanel1.Controls.Add(this.label1);
+            this.guna2ShadowPanel1.Controls.Add(this.textBoxName);
+            this.guna2ShadowPanel1.Controls.Add(this.label2);
+            this.guna2ShadowPanel1.Controls.Add(this.label3);
+            this.guna2ShadowPanel1.Controls.Add(this.label5);
+            this.guna2ShadowPanel1.Controls.Add(this.label4);
+            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(19, 119);
+            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
+            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(314, 235);
+            this.guna2ShadowPanel1.TabIndex = 25;
             // 
             // ChoMuon_GiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.guna2GroupBox1);
+            this.Controls.Add(this.guna2ShadowPanel1);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.buttonLend);
             this.Name = "ChoMuon_GiaoVien";
             this.Size = new System.Drawing.Size(833, 540);
             this.Load += new System.EventHandler(this.ChoMuon_GiaoVien_Load);
-            this.guna2GroupBox1.ResumeLayout(false);
-            this.guna2GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.guna2ShadowPanel1.ResumeLayout(false);
+            this.guna2ShadowPanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2Button buttonLend;
         private Guna.UI2.WinForms.Guna2ComboBox comboBoxGenre;
         private Guna.UI2.WinForms.Guna2TextBox textBoxPrice;
@@ -272,5 +356,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2DataGridView dataGridView1;
+        private System.Windows.Forms.Label label;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
     }
 }

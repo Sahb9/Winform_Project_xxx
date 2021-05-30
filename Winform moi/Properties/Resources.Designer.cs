@@ -113,9 +113,29 @@ namespace Winform_moi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flippingbook {
+            get {
+                object obj = ResourceManager.GetObject("flippingbook", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap giphy {
             get {
                 object obj = ResourceManager.GetObject("giphy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giphy__5_ {
+            get {
+                object obj = ResourceManager.GetObject("giphy (5)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +166,16 @@ namespace Winform_moi.Properties {
         internal static System.Drawing.Bitmap issueBook {
             get {
                 object obj = ResourceManager.GetObject("issueBook", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap issueBook1 {
+            get {
+                object obj = ResourceManager.GetObject("issueBook1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

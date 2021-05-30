@@ -122,5 +122,38 @@ namespace Winform_moi
             comboBoxGenre.ValueMember = "Genre";
             setUpdata();
         }
+
+        private void textBoxQuantity_TextChanged(object sender, EventArgs e)
+        {
+
+            try
+            {
+                DataTable Conlai = book.soSachTheoTen(comboBoxName.Text);
+                int trongkho = (int)Conlai.Rows[0]["Quantity"];
+                int SL = Convert.ToInt32(textBoxQuantity.Text);
+                if (SL > trongkho)
+                    textBoxQuantity.Text = "";
+            }
+
+            catch
+            {
+            }
+        }
+
+        private void comboBoxName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable Conlai = book.soSachTheoTen(comboBoxName.Text);
+                labelexist.Text = "Existing: " + (int)Conlai.Rows[0]["Quantity"];
+            }
+            catch
+            { }
+        }
+
+        private void linkLabelFresh_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+        }
     }
 }

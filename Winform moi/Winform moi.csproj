@@ -51,6 +51,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RankForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RankForm.Designer.cs">
+      <DependentUpon>RankForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\Statics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\Statics.Designer.cs">
+      <DependentUpon>Statics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\DashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="SinhVien.cs" />
     <Compile Include="Usercontrol QuanLy\QLy_GiaoVien.cs">
       <SubType>UserControl</SubType>
@@ -166,6 +184,15 @@
     <Compile Include="User Control _ Sach\ViewBook.Designer.cs">
       <DependentUpon>ViewBook.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RankForm.resx">
+      <DependentUpon>RankForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrol QuanLy\Statics.resx">
+      <DependentUpon>Statics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrol QuanLy\DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main Form\SinhVienForm.resx">
       <DependentUpon>SinhVienForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -259,7 +286,9 @@
   <ItemGroup>
     <None Include="Resources\1535317867_photofunky1.gif" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\giphy %285%29.gif" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image_processing20200410-30528-18zwjq1.gif" />
   </ItemGroup>
@@ -271,6 +300,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1535317867_photofunky2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flippingbook.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\issueBook1.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

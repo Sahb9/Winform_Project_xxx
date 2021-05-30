@@ -29,15 +29,19 @@
         private void InitializeComponent()
         {
             this.Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.buttonStatics = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.buttonTeacher = new Guna.UI2.WinForms.Guna2Button();
             this.buttonQLSinhVien = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.buttonQLNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.buttonQLSach = new Guna.UI2.WinForms.Guna2Button();
             this.Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.dashBoard1 = new Winform_moi.DashBoard();
+            this.qLy_GiaoVien1 = new Winform_moi.QLy_GiaoVien();
             this.qLy_SinhVien1 = new Winform_moi.QLy_SinhVien();
             this.quanLySach1 = new Winform_moi.QuanLySach();
-            this.qLy_GiaoVien1 = new Winform_moi.QLy_GiaoVien();
+            this.statics1 = new Winform_moi.Statics();
             this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.Panel2.SuspendLayout();
@@ -46,6 +50,8 @@
             // Panel1
             // 
             this.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(183)))), ((int)(((byte)(255)))));
+            this.Panel1.Controls.Add(this.buttonStatics);
+            this.Panel1.Controls.Add(this.buttonDashboard);
             this.Panel1.Controls.Add(this.buttonTeacher);
             this.Panel1.Controls.Add(this.buttonQLSinhVien);
             this.Panel1.Controls.Add(this.guna2CirclePictureBox1);
@@ -56,6 +62,36 @@
             this.Panel1.ShadowDecoration.Parent = this.Panel1;
             this.Panel1.Size = new System.Drawing.Size(167, 540);
             this.Panel1.TabIndex = 1;
+            // 
+            // buttonStatics
+            // 
+            this.buttonStatics.CheckedState.Parent = this.buttonStatics;
+            this.buttonStatics.CustomImages.Parent = this.buttonStatics;
+            this.buttonStatics.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonStatics.ForeColor = System.Drawing.Color.White;
+            this.buttonStatics.HoverState.Parent = this.buttonStatics;
+            this.buttonStatics.Location = new System.Drawing.Point(-18, 391);
+            this.buttonStatics.Name = "buttonStatics";
+            this.buttonStatics.ShadowDecoration.Parent = this.buttonStatics;
+            this.buttonStatics.Size = new System.Drawing.Size(193, 42);
+            this.buttonStatics.TabIndex = 11;
+            this.buttonStatics.Text = "Statics";
+            this.buttonStatics.Click += new System.EventHandler(this.buttonStatics_Click);
+            // 
+            // buttonDashboard
+            // 
+            this.buttonDashboard.CheckedState.Parent = this.buttonDashboard;
+            this.buttonDashboard.CustomImages.Parent = this.buttonDashboard;
+            this.buttonDashboard.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDashboard.ForeColor = System.Drawing.Color.White;
+            this.buttonDashboard.HoverState.Parent = this.buttonDashboard;
+            this.buttonDashboard.Location = new System.Drawing.Point(-21, 349);
+            this.buttonDashboard.Name = "buttonDashboard";
+            this.buttonDashboard.ShadowDecoration.Parent = this.buttonDashboard;
+            this.buttonDashboard.Size = new System.Drawing.Size(193, 42);
+            this.buttonDashboard.TabIndex = 10;
+            this.buttonDashboard.Text = "DashBoard";
+            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
             // 
             // buttonTeacher
             // 
@@ -79,7 +115,7 @@
             this.buttonQLSinhVien.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonQLSinhVien.ForeColor = System.Drawing.Color.White;
             this.buttonQLSinhVien.HoverState.Parent = this.buttonQLSinhVien;
-            this.buttonQLSinhVien.Location = new System.Drawing.Point(-11, 262);
+            this.buttonQLSinhVien.Location = new System.Drawing.Point(-23, 265);
             this.buttonQLSinhVien.Name = "buttonQLSinhVien";
             this.buttonQLSinhVien.ShadowDecoration.Parent = this.buttonQLSinhVien;
             this.buttonQLSinhVien.Size = new System.Drawing.Size(193, 42);
@@ -104,7 +140,7 @@
             this.buttonQLNhanVien.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonQLNhanVien.ForeColor = System.Drawing.Color.White;
             this.buttonQLNhanVien.HoverState.Parent = this.buttonQLNhanVien;
-            this.buttonQLNhanVien.Location = new System.Drawing.Point(-23, 217);
+            this.buttonQLNhanVien.Location = new System.Drawing.Point(-18, 223);
             this.buttonQLNhanVien.Name = "buttonQLNhanVien";
             this.buttonQLNhanVien.ShadowDecoration.Parent = this.buttonQLNhanVien;
             this.buttonQLNhanVien.Size = new System.Drawing.Size(193, 42);
@@ -118,15 +154,18 @@
             this.buttonQLSach.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonQLSach.ForeColor = System.Drawing.Color.White;
             this.buttonQLSach.HoverState.Parent = this.buttonQLSach;
-            this.buttonQLSach.Location = new System.Drawing.Point(-29, 169);
+            this.buttonQLSach.Location = new System.Drawing.Point(-53, 181);
             this.buttonQLSach.Name = "buttonQLSach";
             this.buttonQLSach.ShadowDecoration.Parent = this.buttonQLSach;
-            this.buttonQLSach.Size = new System.Drawing.Size(196, 42);
+            this.buttonQLSach.Size = new System.Drawing.Size(225, 42);
             this.buttonQLSach.TabIndex = 3;
             this.buttonQLSach.Text = "Quản Lý Sách";
+            this.buttonQLSach.Click += new System.EventHandler(this.buttonQLSach_Click);
             // 
             // Panel2
             // 
+            this.Panel2.Controls.Add(this.statics1);
+            this.Panel2.Controls.Add(this.dashBoard1);
             this.Panel2.Controls.Add(this.qLy_GiaoVien1);
             this.Panel2.Controls.Add(this.qLy_SinhVien1);
             this.Panel2.Controls.Add(this.quanLySach1);
@@ -135,6 +174,20 @@
             this.Panel2.ShadowDecoration.Parent = this.Panel2;
             this.Panel2.Size = new System.Drawing.Size(833, 540);
             this.Panel2.TabIndex = 2;
+            // 
+            // dashBoard1
+            // 
+            this.dashBoard1.Location = new System.Drawing.Point(3, 3);
+            this.dashBoard1.Name = "dashBoard1";
+            this.dashBoard1.Size = new System.Drawing.Size(833, 540);
+            this.dashBoard1.TabIndex = 3;
+            // 
+            // qLy_GiaoVien1
+            // 
+            this.qLy_GiaoVien1.Location = new System.Drawing.Point(3, 0);
+            this.qLy_GiaoVien1.Name = "qLy_GiaoVien1";
+            this.qLy_GiaoVien1.Size = new System.Drawing.Size(833, 540);
+            this.qLy_GiaoVien1.TabIndex = 2;
             // 
             // qLy_SinhVien1
             // 
@@ -151,12 +204,12 @@
             this.quanLySach1.TabIndex = 0;
             this.quanLySach1.Load += new System.EventHandler(this.quanLySach1_Load);
             // 
-            // qLy_GiaoVien1
+            // statics1
             // 
-            this.qLy_GiaoVien1.Location = new System.Drawing.Point(3, 0);
-            this.qLy_GiaoVien1.Name = "qLy_GiaoVien1";
-            this.qLy_GiaoVien1.Size = new System.Drawing.Size(833, 540);
-            this.qLy_GiaoVien1.TabIndex = 2;
+            this.statics1.Location = new System.Drawing.Point(0, 0);
+            this.statics1.Name = "statics1";
+            this.statics1.Size = new System.Drawing.Size(833, 540);
+            this.statics1.TabIndex = 4;
             // 
             // QuanLyForm
             // 
@@ -188,6 +241,10 @@
         private Guna.UI2.WinForms.Guna2Button buttonQLSinhVien;
         private QLy_SinhVien qLy_SinhVien1;
         private QLy_GiaoVien qLy_GiaoVien1;
+        private Guna.UI2.WinForms.Guna2Button buttonDashboard;
+        private DashBoard dashBoard1;
+        private Guna.UI2.WinForms.Guna2Button buttonStatics;
+        private Statics statics1;
     }
 }
 

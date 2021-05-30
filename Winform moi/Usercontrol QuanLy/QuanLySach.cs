@@ -41,5 +41,10 @@ namespace Winform_moi
         {
 
         }
+
+        private void QuanLySach_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

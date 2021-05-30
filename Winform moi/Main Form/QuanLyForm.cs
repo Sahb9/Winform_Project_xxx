@@ -38,5 +38,23 @@ namespace Winform_moi
             qLy_GiaoVien1.QLy_GiaoVien_Load(sender, e);
             qLy_GiaoVien1.BringToFront();
         }
+
+        private void buttonDashboard_Click(object sender, EventArgs e)
+        {
+            dashBoard1.DashBoard_Load(sender, e);
+            dashBoard1.BringToFront();
+        }
+
+        private void buttonQLSach_Click(object sender, EventArgs e)
+        {
+            
+            quanLySach1.BringToFront();
+        }
+
+        private void buttonStatics_Click(object sender, EventArgs e)
+        {
+            statics1.Statics_Load(sender, e);
+            statics1.BringToFront();
+        }
     }
 }
