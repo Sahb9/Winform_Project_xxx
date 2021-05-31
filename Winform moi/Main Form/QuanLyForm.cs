@@ -56,5 +56,16 @@ namespace Winform_moi
             statics1.Statics_Load(sender, e);
             statics1.BringToFront();
         }
+
+        private void buttonQLNhanVien_Click(object sender, EventArgs e)
+        {
+            qLyNhanVien1.QLyNhanVien_Load(sender, e);
+            qLyNhanVien1.BringToFront();
+        }
+
+        private void qLyNhanVien1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

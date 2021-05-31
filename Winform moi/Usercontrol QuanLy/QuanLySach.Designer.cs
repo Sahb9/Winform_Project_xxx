@@ -33,9 +33,6 @@
             this.ButtonEdit = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.ButtonAdd = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.ButtonView = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.labelSearch = new System.Windows.Forms.Label();
-            this.ButtonSeach = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.removeBook1 = new Winform_moi.RemoveBook();
             this.viewBook1 = new Winform_moi.ViewBook();
@@ -121,55 +118,6 @@
             this.ButtonView.Text = "View";
             this.ButtonView.Click += new System.EventHandler(this.ButtonView_Click);
             // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(116, 34);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(204, 36);
-            this.guna2ComboBox1.TabIndex = 10;
-            // 
-            // labelSearch
-            // 
-            this.labelSearch.AutoSize = true;
-            this.labelSearch.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(102)))), ((int)(((byte)(5)))));
-            this.labelSearch.Location = new System.Drawing.Point(26, 42);
-            this.labelSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelSearch.Name = "labelSearch";
-            this.labelSearch.Size = new System.Drawing.Size(79, 21);
-            this.labelSearch.TabIndex = 11;
-            this.labelSearch.Text = "Category";
-            // 
-            // ButtonSeach
-            // 
-            this.ButtonSeach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(203)))), ((int)(((byte)(9)))));
-            this.ButtonSeach.CheckedState.Parent = this.ButtonSeach;
-            this.ButtonSeach.CustomImages.Parent = this.ButtonSeach;
-            this.ButtonSeach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(203)))), ((int)(((byte)(9)))));
-            this.ButtonSeach.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ButtonSeach.ForeColor = System.Drawing.Color.White;
-            this.ButtonSeach.HoverState.Parent = this.ButtonSeach;
-            this.ButtonSeach.Location = new System.Drawing.Point(351, 34);
-            this.ButtonSeach.Margin = new System.Windows.Forms.Padding(4);
-            this.ButtonSeach.Name = "ButtonSeach";
-            this.ButtonSeach.ShadowDecoration.Parent = this.ButtonSeach;
-            this.ButtonSeach.Size = new System.Drawing.Size(116, 36);
-            this.ButtonSeach.TabIndex = 12;
-            this.ButtonSeach.Text = "Search";
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.removeBook1);
@@ -216,9 +164,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.ButtonSeach);
-            this.Controls.Add(this.labelSearch);
-            this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.guna2Panel2);
             this.Name = "QuanLySach";
             this.Size = new System.Drawing.Size(833, 540);
@@ -226,7 +171,6 @@
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -237,9 +181,6 @@
         private Guna.UI2.WinForms.Guna2GradientTileButton ButtonEdit;
         private Guna.UI2.WinForms.Guna2GradientTileButton ButtonAdd;
         private Guna.UI2.WinForms.Guna2GradientTileButton ButtonView;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private System.Windows.Forms.Label labelSearch;
-        private Guna.UI2.WinForms.Guna2Button ButtonSeach;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private EditBook editBook1;
         private AddBook addBook1;

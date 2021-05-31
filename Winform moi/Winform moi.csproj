@@ -51,10 +51,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RankForm.cs">
+    <Compile Include="ChiaCa.cs" />
+    <Compile Include="Usercontrol QuanLy\QLy Nhan Vien\ShowCheckIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RankForm.Designer.cs">
+    <Compile Include="Usercontrol QuanLy\QLy Nhan Vien\ShowCheckIn.Designer.cs">
+      <DependentUpon>ShowCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\QLy Nhan Vien\ShowCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\QLy Nhan Vien\ShowCheckOut.Designer.cs">
+      <DependentUpon>ShowCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\QLy Nhan Vien\ShowStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\QLy Nhan Vien\ShowStaff.Designer.cs">
+      <DependentUpon>ShowStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\QLyNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\QLyNhanVien.Designer.cs">
+      <DependentUpon>QLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\Statics\RankForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usercontrol QuanLy\Statics\RankForm.Designer.cs">
       <DependentUpon>RankForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Usercontrol QuanLy\Statics.cs">
@@ -69,7 +94,7 @@
     <Compile Include="Usercontrol QuanLy\DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="SinhVien.cs" />
+    <Compile Include="Template Class\SinhVien.cs" />
     <Compile Include="Usercontrol QuanLy\QLy_GiaoVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -184,7 +209,19 @@
     <Compile Include="User Control _ Sach\ViewBook.Designer.cs">
       <DependentUpon>ViewBook.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RankForm.resx">
+    <EmbeddedResource Include="Usercontrol QuanLy\QLy Nhan Vien\ShowCheckIn.resx">
+      <DependentUpon>ShowCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrol QuanLy\QLy Nhan Vien\ShowCheckOut.resx">
+      <DependentUpon>ShowCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrol QuanLy\QLy Nhan Vien\ShowStaff.resx">
+      <DependentUpon>ShowStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrol QuanLy\QLyNhanVien.resx">
+      <DependentUpon>QLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrol QuanLy\Statics\RankForm.resx">
       <DependentUpon>RankForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrol QuanLy\Statics.resx">

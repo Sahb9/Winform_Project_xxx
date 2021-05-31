@@ -16,9 +16,20 @@ namespace Winform_moi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyForm());
+             Application.Run(new QuanLyForm());
             //Application.Run(new GiaoVienForm());
             //Application.Run(new SinhVienForm());
+            string n;
+            string sql="";
+            
+            for (int i=0;i<5;i++)
+            {
+                Random rd = new Random();
+               sql= rd.Next(1,3).ToString();
+                //sql += n;
+                MessageBox.Show(sql);
+            }
+            
         }
     }
 }

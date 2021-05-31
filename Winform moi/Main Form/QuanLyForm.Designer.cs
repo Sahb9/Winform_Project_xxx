@@ -37,11 +37,12 @@
             this.buttonQLNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.buttonQLSach = new Guna.UI2.WinForms.Guna2Button();
             this.Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.qLyNhanVien1 = new Winform_moi.QLyNhanVien();
+            this.statics1 = new Winform_moi.Statics();
             this.dashBoard1 = new Winform_moi.DashBoard();
             this.qLy_GiaoVien1 = new Winform_moi.QLy_GiaoVien();
             this.qLy_SinhVien1 = new Winform_moi.QLy_SinhVien();
             this.quanLySach1 = new Winform_moi.QuanLySach();
-            this.statics1 = new Winform_moi.Statics();
             this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.Panel2.SuspendLayout();
@@ -146,6 +147,7 @@
             this.buttonQLNhanVien.Size = new System.Drawing.Size(193, 42);
             this.buttonQLNhanVien.TabIndex = 4;
             this.buttonQLNhanVien.Text = "Quản Lý Nhân Viên";
+            this.buttonQLNhanVien.Click += new System.EventHandler(this.buttonQLNhanVien_Click);
             // 
             // buttonQLSach
             // 
@@ -164,6 +166,7 @@
             // 
             // Panel2
             // 
+            this.Panel2.Controls.Add(this.qLyNhanVien1);
             this.Panel2.Controls.Add(this.statics1);
             this.Panel2.Controls.Add(this.dashBoard1);
             this.Panel2.Controls.Add(this.qLy_GiaoVien1);
@@ -174,6 +177,21 @@
             this.Panel2.ShadowDecoration.Parent = this.Panel2;
             this.Panel2.Size = new System.Drawing.Size(833, 540);
             this.Panel2.TabIndex = 2;
+            // 
+            // qLyNhanVien1
+            // 
+            this.qLyNhanVien1.Location = new System.Drawing.Point(0, 0);
+            this.qLyNhanVien1.Name = "qLyNhanVien1";
+            this.qLyNhanVien1.Size = new System.Drawing.Size(833, 540);
+            this.qLyNhanVien1.TabIndex = 5;
+            this.qLyNhanVien1.Load += new System.EventHandler(this.qLyNhanVien1_Load);
+            // 
+            // statics1
+            // 
+            this.statics1.Location = new System.Drawing.Point(0, 0);
+            this.statics1.Name = "statics1";
+            this.statics1.Size = new System.Drawing.Size(833, 540);
+            this.statics1.TabIndex = 4;
             // 
             // dashBoard1
             // 
@@ -203,13 +221,6 @@
             this.quanLySach1.Size = new System.Drawing.Size(833, 540);
             this.quanLySach1.TabIndex = 0;
             this.quanLySach1.Load += new System.EventHandler(this.quanLySach1_Load);
-            // 
-            // statics1
-            // 
-            this.statics1.Location = new System.Drawing.Point(0, 0);
-            this.statics1.Name = "statics1";
-            this.statics1.Size = new System.Drawing.Size(833, 540);
-            this.statics1.TabIndex = 4;
             // 
             // QuanLyForm
             // 
@@ -245,6 +256,7 @@
         private DashBoard dashBoard1;
         private Guna.UI2.WinForms.Guna2Button buttonStatics;
         private Statics statics1;
+        private QLyNhanVien qLyNhanVien1;
     }
 }
 
