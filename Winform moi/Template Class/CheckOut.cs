@@ -8,24 +8,9 @@ using System.Threading.Tasks;
 
 namespace Winform_moi
 {
-    class ChiaCa
+    class CheckOut
     {
         Database db = new Database();
-        public bool getData(string sql)
-        {
-            SqlCommand command = new SqlCommand(sql, db.getConnection);
-            db.openConnection();
-            if ((command.ExecuteNonQuery() == 1))
-            {
-                db.closeConnection();
-                return true;
-            }
-            else
-            {
-                db.closeConnection();
-                return false;
-            }
-        }
         public DataTable getTable(string sql)
         {
             SqlCommand command = new SqlCommand(sql, db.getConnection);
@@ -34,6 +19,5 @@ namespace Winform_moi
             adapter.Fill(table);
             return table;
         }
-
     }
 }

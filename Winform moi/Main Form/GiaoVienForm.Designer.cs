@@ -43,6 +43,7 @@
             this.traSach_GiaoVien1 = new Winform_moi.TraSach_GiaoVien();
             this.choMuon_GiaoVien1 = new Winform_moi.ChoMuon_GiaoVien();
             this.muon_GiaoVien1 = new Winform_moi.Muon_GiaoVien();
+            this.buttonImage = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panel2.SuspendLayout();
@@ -55,6 +56,7 @@
             // Panel1
             // 
             this.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(183)))), ((int)(((byte)(255)))));
+            this.Panel1.Controls.Add(this.buttonImage);
             this.Panel1.Controls.Add(this.buttonDanhSach);
             this.Panel1.Controls.Add(this.pictureBox1);
             this.Panel1.Controls.Add(this.buttonTra);
@@ -218,6 +220,21 @@
             this.muon_GiaoVien1.Size = new System.Drawing.Size(833, 540);
             this.muon_GiaoVien1.TabIndex = 0;
             // 
+            // buttonImage
+            // 
+            this.buttonImage.CheckedState.Parent = this.buttonImage;
+            this.buttonImage.CustomImages.Parent = this.buttonImage;
+            this.buttonImage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(112)))), ((int)(((byte)(85)))));
+            this.buttonImage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonImage.ForeColor = System.Drawing.Color.White;
+            this.buttonImage.HoverState.Parent = this.buttonImage;
+            this.buttonImage.Location = new System.Drawing.Point(39, 116);
+            this.buttonImage.Name = "buttonImage";
+            this.buttonImage.ShadowDecoration.Parent = this.buttonImage;
+            this.buttonImage.Size = new System.Drawing.Size(86, 26);
+            this.buttonImage.TabIndex = 15;
+            this.buttonImage.Text = "Edit Image";
+            // 
             // GiaoVienForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,5 +274,6 @@
         private Sach_GiaoVien sach_GiaoVien1;
         private Guna.UI2.WinForms.Guna2GradientPanel panelX;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private Guna.UI2.WinForms.Guna2GradientTileButton buttonImage;
     }
 }

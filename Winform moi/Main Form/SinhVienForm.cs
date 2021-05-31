@@ -55,5 +55,35 @@ namespace Winform_moi
         {
 
         }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tinhTrang_SinhVien1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void muonSach_SinhVien1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void traSach_SinhVien1_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

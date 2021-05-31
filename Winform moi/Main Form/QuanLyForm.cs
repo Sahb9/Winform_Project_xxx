@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,15 +18,27 @@ namespace Winform_moi
         {
             InitializeComponent();
         }
-
+        Database db = new Database();
+        Manager ma = new Manager();
         private void quanLySach1_Load(object sender, EventArgs e)
         {
-
+            LoadAnh();
         }
-
+        void LoadAnh()
+        {
+            string sql = "SELECT *FROM Manager WHERE ID =" + StatisID.GlobalUserId;
+            DataTable table= ma.getTable(sql);
+            //
+           
+            //byte[] pic = (byte[])table.Rows[0][6];
+            //MemoryStream picture = new MemoryStream(pic);
+            //pictureBox1.Image = Image.FromStream(picture);
+            ////Tùy chỉnh Zoom
+            //pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+        }
         private void QuanLyForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void buttonQLSinhVien_Click(object sender, EventArgs e)
@@ -66,6 +80,40 @@ namespace Winform_moi
         private void qLyNhanVien1_Load(object sender, EventArgs e)
         {
 
+        }
+        ChiaCa chia = new ChiaCa();
+  
+
+        private void buttonImage_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog opf = new OpenFileDialog();
+                opf.Filter = "select image(*.jpg;*.png;*.gif)|*.jpg;*.png;*.gif";
+                if (opf.ShowDialog() == DialogResult.OK)
+                {
+                    pictureBox1.Image = Image.FromFile(opf.FileName);
+                    pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                }
+                MemoryStream pic = new MemoryStream();
+                pictureBox1.Image.Save(pic, pictureBox1.Image.RawFormat);
+                //
+                SqlCommand command = new SqlCommand("UPDATE Manager set ManagerPicture = @pic WHERE ID =" + StatisID.GlobalUserId, db.getConnection);
+                command.Parameters.Add("@pic", SqlDbType.Image).Value = pic.ToArray();
+                db.openConnection();
+                if ((command.ExecuteNonQuery() == 1))
+                {
+                    db.closeConnection();
+                    // return true;
+                }
+                else
+                {
+                    db.closeConnection();
+                    //return false;
+                }
+            }
+            catch
+            { }
         }
     }
 }

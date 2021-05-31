@@ -20,7 +20,7 @@ namespace Winform_moi
         ChiaCa chiaca = new ChiaCa();
         private void ShowStaff_Load(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM Staff";
+            string sql = "SELECT ID,Name,Gender,Phone,Address FROM Staff";
             dataGridView1.DataSource = chiaca.getTable(sql);
         }
     }

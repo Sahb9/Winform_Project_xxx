@@ -51,7 +51,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChiaCa.cs" />
+    <Compile Include="Manager.cs" />
+    <Compile Include="Template Class\CheckIn.cs" />
+    <Compile Include="Template Class\CheckOut.cs" />
+    <Compile Include="UserControl_Staff\CheckIn_Staff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Staff\CheckIn_Staff.Designer.cs">
+      <DependentUpon>CheckIn_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Staff\CheckOut_Staff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Staff\CheckOut_Staff.Designer.cs">
+      <DependentUpon>CheckOut_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Form\StaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Form\StaffForm.Designer.cs">
+      <DependentUpon>StaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template Class\ChiaCa.cs" />
     <Compile Include="Usercontrol QuanLy\QLy Nhan Vien\ShowCheckIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +230,15 @@
     <Compile Include="User Control _ Sach\ViewBook.Designer.cs">
       <DependentUpon>ViewBook.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControl_Staff\CheckIn_Staff.resx">
+      <DependentUpon>CheckIn_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Staff\CheckOut_Staff.resx">
+      <DependentUpon>CheckOut_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Form\StaffForm.resx">
+      <DependentUpon>StaffForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usercontrol QuanLy\QLy Nhan Vien\ShowCheckIn.resx">
       <DependentUpon>ShowCheckIn.cs</DependentUpon>
     </EmbeddedResource>

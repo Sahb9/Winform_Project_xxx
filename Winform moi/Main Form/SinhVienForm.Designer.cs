@@ -30,21 +30,23 @@
         {
             this.Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.buttonTinhTrang = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.buttonTra = new Guna.UI2.WinForms.Guna2Button();
             this.buttonMuon = new Guna.UI2.WinForms.Guna2Button();
             this.Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.traSach_SinhVien1 = new Winform_moi.TraSach_SinhVien();
-            this.muonSach_SinhVien1 = new Winform_moi.MuonSach_SinhVien();
             this.tinhTrang_SinhVien1 = new Winform_moi.TinhTrang_SinhVien();
+            this.muonSach_SinhVien1 = new Winform_moi.MuonSach_SinhVien();
+            this.traSach_SinhVien1 = new Winform_moi.TraSach_SinhVien();
+            this.buttonImage = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.Panel1.SuspendLayout();
-            this.Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel1
             // 
             this.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(183)))), ((int)(((byte)(255)))));
+            this.Panel1.Controls.Add(this.buttonImage);
             this.Panel1.Controls.Add(this.buttonTinhTrang);
             this.Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.Panel1.Controls.Add(this.buttonTra);
@@ -54,6 +56,7 @@
             this.Panel1.ShadowDecoration.Parent = this.Panel1;
             this.Panel1.Size = new System.Drawing.Size(167, 540);
             this.Panel1.TabIndex = 3;
+            this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // buttonTinhTrang
             // 
@@ -69,6 +72,17 @@
             this.buttonTinhTrang.TabIndex = 8;
             this.buttonTinhTrang.Text = "Tình trạng Sinh Viên";
             this.buttonTinhTrang.Click += new System.EventHandler(this.buttonTinhTrang_Click);
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(143, 96);
+            this.guna2CirclePictureBox1.TabIndex = 7;
+            this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // buttonTra
             // 
@@ -110,30 +124,7 @@
             this.Panel2.ShadowDecoration.Parent = this.Panel2;
             this.Panel2.Size = new System.Drawing.Size(833, 540);
             this.Panel2.TabIndex = 4;
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(143, 96);
-            this.guna2CirclePictureBox1.TabIndex = 7;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // traSach_SinhVien1
-            // 
-            this.traSach_SinhVien1.Location = new System.Drawing.Point(0, 0);
-            this.traSach_SinhVien1.Name = "traSach_SinhVien1";
-            this.traSach_SinhVien1.Size = new System.Drawing.Size(833, 540);
-            this.traSach_SinhVien1.TabIndex = 0;
-            // 
-            // muonSach_SinhVien1
-            // 
-            this.muonSach_SinhVien1.Location = new System.Drawing.Point(0, 0);
-            this.muonSach_SinhVien1.Name = "muonSach_SinhVien1";
-            this.muonSach_SinhVien1.Size = new System.Drawing.Size(833, 540);
-            this.muonSach_SinhVien1.TabIndex = 1;
+            this.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
             // tinhTrang_SinhVien1
             // 
@@ -141,6 +132,38 @@
             this.tinhTrang_SinhVien1.Name = "tinhTrang_SinhVien1";
             this.tinhTrang_SinhVien1.Size = new System.Drawing.Size(833, 540);
             this.tinhTrang_SinhVien1.TabIndex = 2;
+            this.tinhTrang_SinhVien1.Load += new System.EventHandler(this.tinhTrang_SinhVien1_Load_1);
+            // 
+            // muonSach_SinhVien1
+            // 
+            this.muonSach_SinhVien1.Location = new System.Drawing.Point(0, 0);
+            this.muonSach_SinhVien1.Name = "muonSach_SinhVien1";
+            this.muonSach_SinhVien1.Size = new System.Drawing.Size(833, 540);
+            this.muonSach_SinhVien1.TabIndex = 1;
+            this.muonSach_SinhVien1.Load += new System.EventHandler(this.muonSach_SinhVien1_Load);
+            // 
+            // traSach_SinhVien1
+            // 
+            this.traSach_SinhVien1.Location = new System.Drawing.Point(0, 0);
+            this.traSach_SinhVien1.Name = "traSach_SinhVien1";
+            this.traSach_SinhVien1.Size = new System.Drawing.Size(833, 540);
+            this.traSach_SinhVien1.TabIndex = 0;
+            this.traSach_SinhVien1.Load += new System.EventHandler(this.traSach_SinhVien1_Load_1);
+            // 
+            // buttonImage
+            // 
+            this.buttonImage.CheckedState.Parent = this.buttonImage;
+            this.buttonImage.CustomImages.Parent = this.buttonImage;
+            this.buttonImage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(112)))), ((int)(((byte)(85)))));
+            this.buttonImage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonImage.ForeColor = System.Drawing.Color.White;
+            this.buttonImage.HoverState.Parent = this.buttonImage;
+            this.buttonImage.Location = new System.Drawing.Point(41, 114);
+            this.buttonImage.Name = "buttonImage";
+            this.buttonImage.ShadowDecoration.Parent = this.buttonImage;
+            this.buttonImage.Size = new System.Drawing.Size(86, 26);
+            this.buttonImage.TabIndex = 15;
+            this.buttonImage.Text = "Edit Image";
             // 
             // SinhVienForm
             // 
@@ -153,8 +176,8 @@
             this.Text = "SinhVienForm";
             this.Load += new System.EventHandler(this.SinhVienForm_Load);
             this.Panel1.ResumeLayout(false);
-            this.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            this.Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -170,5 +193,6 @@
         private TraSach_SinhVien traSach_SinhVien1;
         private TinhTrang_SinhVien tinhTrang_SinhVien1;
         private MuonSach_SinhVien muonSach_SinhVien1;
+        private Guna.UI2.WinForms.Guna2GradientTileButton buttonImage;
     }
 }

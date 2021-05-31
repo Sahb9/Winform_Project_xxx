@@ -149,6 +149,7 @@ namespace Winform_moi
             DataGridViewImageColumn piccol = new DataGridViewImageColumn();
             dataGridView1.RowTemplate.Height = 60;
             dataGridView1.DataSource = std.getTeacher(command);
+            // set up ảnh
             piccol = (DataGridViewImageColumn)dataGridView1.Columns[5];
             piccol.ImageLayout = DataGridViewImageCellLayout.Stretch;
             dataGridView1.AllowUserToAddRows = false;

@@ -71,10 +71,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(346, 16);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(189, 25);
+            this.label9.Size = new System.Drawing.Size(232, 31);
             this.label9.TabIndex = 68;
             this.label9.Text = "Manage Teacher";
             // 

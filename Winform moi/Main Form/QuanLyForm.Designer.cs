@@ -33,7 +33,7 @@
             this.buttonDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.buttonTeacher = new Guna.UI2.WinForms.Guna2Button();
             this.buttonQLSinhVien = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.pictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.buttonQLNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.buttonQLSach = new Guna.UI2.WinForms.Guna2Button();
             this.Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -43,19 +43,21 @@
             this.qLy_GiaoVien1 = new Winform_moi.QLy_GiaoVien();
             this.qLy_SinhVien1 = new Winform_moi.QLy_SinhVien();
             this.quanLySach1 = new Winform_moi.QuanLySach();
+            this.buttonImage = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel1
             // 
             this.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(183)))), ((int)(((byte)(255)))));
+            this.Panel1.Controls.Add(this.buttonImage);
             this.Panel1.Controls.Add(this.buttonStatics);
             this.Panel1.Controls.Add(this.buttonDashboard);
             this.Panel1.Controls.Add(this.buttonTeacher);
             this.Panel1.Controls.Add(this.buttonQLSinhVien);
-            this.Panel1.Controls.Add(this.guna2CirclePictureBox1);
+            this.Panel1.Controls.Add(this.pictureBox1);
             this.Panel1.Controls.Add(this.buttonQLNhanVien);
             this.Panel1.Controls.Add(this.buttonQLSach);
             this.Panel1.Location = new System.Drawing.Point(0, 0);
@@ -124,15 +126,15 @@
             this.buttonQLSinhVien.Text = "Quản Lý Sinh Viên";
             this.buttonQLSinhVien.Click += new System.EventHandler(this.buttonQLSinhVien_Click);
             // 
-            // guna2CirclePictureBox1
+            // pictureBox1
             // 
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(143, 96);
-            this.guna2CirclePictureBox1.TabIndex = 7;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pictureBox1.ShadowDecoration.Parent = this.pictureBox1;
+            this.pictureBox1.Size = new System.Drawing.Size(143, 96);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // buttonQLNhanVien
             // 
@@ -222,6 +224,22 @@
             this.quanLySach1.TabIndex = 0;
             this.quanLySach1.Load += new System.EventHandler(this.quanLySach1_Load);
             // 
+            // buttonImage
+            // 
+            this.buttonImage.CheckedState.Parent = this.buttonImage;
+            this.buttonImage.CustomImages.Parent = this.buttonImage;
+            this.buttonImage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(112)))), ((int)(((byte)(85)))));
+            this.buttonImage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonImage.ForeColor = System.Drawing.Color.White;
+            this.buttonImage.HoverState.Parent = this.buttonImage;
+            this.buttonImage.Location = new System.Drawing.Point(39, 114);
+            this.buttonImage.Name = "buttonImage";
+            this.buttonImage.ShadowDecoration.Parent = this.buttonImage;
+            this.buttonImage.Size = new System.Drawing.Size(86, 26);
+            this.buttonImage.TabIndex = 14;
+            this.buttonImage.Text = "Edit Image";
+            this.buttonImage.Click += new System.EventHandler(this.buttonImage_Click);
+            // 
             // QuanLyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,7 +252,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.QuanLyForm_Load);
             this.Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -247,7 +265,7 @@
         private Guna.UI2.WinForms.Guna2Button buttonQLSach;
         private Guna.UI2.WinForms.Guna2Panel Panel2;
         private QuanLySach quanLySach1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button buttonTeacher;
         private Guna.UI2.WinForms.Guna2Button buttonQLSinhVien;
         private QLy_SinhVien qLy_SinhVien1;
@@ -257,6 +275,7 @@
         private Guna.UI2.WinForms.Guna2Button buttonStatics;
         private Statics statics1;
         private QLyNhanVien qLyNhanVien1;
+        private Guna.UI2.WinForms.Guna2GradientTileButton buttonImage;
     }
 }
 
