@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.buttonImage = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.buttonStatics = new Guna.UI2.WinForms.Guna2Button();
             this.buttonDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.buttonTeacher = new Guna.UI2.WinForms.Guna2Button();
@@ -43,10 +44,13 @@
             this.qLy_GiaoVien1 = new Winform_moi.QLy_GiaoVien();
             this.qLy_SinhVien1 = new Winform_moi.QLy_SinhVien();
             this.quanLySach1 = new Winform_moi.QuanLySach();
-            this.buttonImage = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.panelX = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panel2.SuspendLayout();
+            this.panelX.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel1
@@ -65,6 +69,22 @@
             this.Panel1.ShadowDecoration.Parent = this.Panel1;
             this.Panel1.Size = new System.Drawing.Size(167, 540);
             this.Panel1.TabIndex = 1;
+            // 
+            // buttonImage
+            // 
+            this.buttonImage.CheckedState.Parent = this.buttonImage;
+            this.buttonImage.CustomImages.Parent = this.buttonImage;
+            this.buttonImage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(112)))), ((int)(((byte)(85)))));
+            this.buttonImage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonImage.ForeColor = System.Drawing.Color.White;
+            this.buttonImage.HoverState.Parent = this.buttonImage;
+            this.buttonImage.Location = new System.Drawing.Point(39, 114);
+            this.buttonImage.Name = "buttonImage";
+            this.buttonImage.ShadowDecoration.Parent = this.buttonImage;
+            this.buttonImage.Size = new System.Drawing.Size(86, 26);
+            this.buttonImage.TabIndex = 14;
+            this.buttonImage.Text = "Edit Image";
+            this.buttonImage.Click += new System.EventHandler(this.buttonImage_Click);
             // 
             // buttonStatics
             // 
@@ -168,6 +188,7 @@
             // 
             // Panel2
             // 
+            this.Panel2.Controls.Add(this.panelX);
             this.Panel2.Controls.Add(this.qLyNhanVien1);
             this.Panel2.Controls.Add(this.statics1);
             this.Panel2.Controls.Add(this.dashBoard1);
@@ -224,21 +245,26 @@
             this.quanLySach1.TabIndex = 0;
             this.quanLySach1.Load += new System.EventHandler(this.quanLySach1_Load);
             // 
-            // buttonImage
+            // panelX
             // 
-            this.buttonImage.CheckedState.Parent = this.buttonImage;
-            this.buttonImage.CustomImages.Parent = this.buttonImage;
-            this.buttonImage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(112)))), ((int)(((byte)(85)))));
-            this.buttonImage.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.buttonImage.ForeColor = System.Drawing.Color.White;
-            this.buttonImage.HoverState.Parent = this.buttonImage;
-            this.buttonImage.Location = new System.Drawing.Point(39, 114);
-            this.buttonImage.Name = "buttonImage";
-            this.buttonImage.ShadowDecoration.Parent = this.buttonImage;
-            this.buttonImage.Size = new System.Drawing.Size(86, 26);
-            this.buttonImage.TabIndex = 14;
-            this.buttonImage.Text = "Edit Image";
-            this.buttonImage.Click += new System.EventHandler(this.buttonImage_Click);
+            this.panelX.Controls.Add(this.pictureBox3);
+            this.panelX.FillColor = System.Drawing.Color.Coral;
+            this.panelX.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(93)))), ((int)(((byte)(156)))));
+            this.panelX.Location = new System.Drawing.Point(1, 2);
+            this.panelX.Name = "panelX";
+            this.panelX.ShadowDecoration.Parent = this.panelX;
+            this.panelX.Size = new System.Drawing.Size(830, 537);
+            this.panelX.TabIndex = 6;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Winform_moi.Properties.Resources._1535317867_photofunky2;
+            this.pictureBox3.Location = new System.Drawing.Point(124, 169);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(493, 192);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // QuanLyForm
             // 
@@ -254,6 +280,8 @@
             this.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Panel2.ResumeLayout(false);
+            this.panelX.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -276,6 +304,8 @@
         private Statics statics1;
         private QLyNhanVien qLyNhanVien1;
         private Guna.UI2.WinForms.Guna2GradientTileButton buttonImage;
+        private Guna.UI2.WinForms.Guna2GradientPanel panelX;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

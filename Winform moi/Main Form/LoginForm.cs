@@ -38,9 +38,14 @@ namespace Winform_moi
                     adapter.SelectCommand = command;
                     adapter.Fill(table);
                     //set id
-                    int userId = Convert.ToInt32(table.Rows[0][0]);
-                    StatisID.SetGlobalUserId(userId);
-                    if ((table.Rows.Count > 0))
+                    try
+                    {
+                        int userId = Convert.ToInt32(table.Rows[0][0]);
+                        StatisID.SetGlobalUserId(userId);
+                    }
+                    catch
+                    { }
+                        if ((table.Rows.Count > 0))
                     {
 
                         SinhVienForm frm = new SinhVienForm();
@@ -58,9 +63,15 @@ namespace Winform_moi
                     command.Parameters.Add("@pass", SqlDbType.VarChar).Value = textBoxPassWord.Text;
                     adapter.SelectCommand = command;
                     adapter.Fill(table);
+                    
                     //set id
-                    int userId = Convert.ToInt32(table.Rows[0][0]);
-                    StatisID.SetGlobalUserId(userId);
+                    try
+                    {
+                        int userId = Convert.ToInt32(table.Rows[0][0]);
+                        StatisID.SetGlobalUserId(userId);
+                    }
+                    catch
+                    { }
                     if ((table.Rows.Count > 0))
                     {
                         GiaoVienForm frm = new GiaoVienForm();
@@ -80,8 +91,13 @@ namespace Winform_moi
                     adapter.SelectCommand = command;
                     adapter.Fill(table);
                     //set id
-                    int userId = Convert.ToInt32(table.Rows[0][0]);
-                    StatisID.SetGlobalUserId(userId);
+                    try
+                    {
+                        int userId = Convert.ToInt32(table.Rows[0][0]);
+                        StatisID.SetGlobalUserId(userId);
+                    }
+                    catch
+                    { }
                     if ((table.Rows.Count > 0))
                     {
                         QuanLyForm frm = new QuanLyForm();
@@ -101,9 +117,14 @@ namespace Winform_moi
                     adapter.SelectCommand = command;
                     adapter.Fill(table);
                     //set id
-                    int userId = Convert.ToInt32(table.Rows[0][0]);
-                    StatisID.SetGlobalUserId(userId);
-                    if ((table.Rows.Count > 0))
+                    try
+                    {
+                        int userId = Convert.ToInt32(table.Rows[0][0]);
+                        StatisID.SetGlobalUserId(userId);
+                    }
+                    catch
+                    { }
+                        if ((table.Rows.Count > 0))
                     {
 
                         StaffForm frm = new StaffForm();

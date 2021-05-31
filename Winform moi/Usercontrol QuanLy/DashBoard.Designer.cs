@@ -45,11 +45,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.groupBoxCondition = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.labelLateBook = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.labelWorn = new System.Windows.Forms.Label();
-            this.labelLateBook = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBoxNguoiDung.SuspendLayout();
@@ -98,6 +98,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(25, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 15);
@@ -120,6 +121,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(14, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 15);
@@ -155,6 +157,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(32, 58);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 15);
@@ -177,6 +180,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(20, 58);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 15);
@@ -213,6 +217,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(35, 60);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 15);
@@ -235,6 +240,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(28, 60);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 15);
@@ -269,9 +275,20 @@
             this.guna2GroupBox2.TabIndex = 4;
             this.guna2GroupBox2.Text = "Late Book";
             // 
+            // labelLateBook
+            // 
+            this.labelLateBook.AutoSize = true;
+            this.labelLateBook.BackColor = System.Drawing.Color.Transparent;
+            this.labelLateBook.Location = new System.Drawing.Point(22, 104);
+            this.labelLateBook.Name = "labelLateBook";
+            this.labelLateBook.Size = new System.Drawing.Size(94, 15);
+            this.labelLateBook.TabIndex = 5;
+            this.labelLateBook.Text = "Price LateBook:";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(22, 60);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 15);
@@ -293,32 +310,25 @@
             this.guna2GroupBox3.TabIndex = 3;
             this.guna2GroupBox3.Text = "Worn";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(11, 60);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 15);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "label8";
-            // 
             // labelWorn
             // 
             this.labelWorn.AutoSize = true;
+            this.labelWorn.BackColor = System.Drawing.Color.Transparent;
             this.labelWorn.Location = new System.Drawing.Point(11, 104);
             this.labelWorn.Name = "labelWorn";
             this.labelWorn.Size = new System.Drawing.Size(69, 15);
             this.labelWorn.TabIndex = 4;
             this.labelWorn.Text = "Price Worn";
             // 
-            // labelLateBook
+            // label8
             // 
-            this.labelLateBook.AutoSize = true;
-            this.labelLateBook.Location = new System.Drawing.Point(22, 104);
-            this.labelLateBook.Name = "labelLateBook";
-            this.labelLateBook.Size = new System.Drawing.Size(94, 15);
-            this.labelLateBook.TabIndex = 5;
-            this.labelLateBook.Text = "Price LateBook:";
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Location = new System.Drawing.Point(11, 60);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 15);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "label8";
             // 
             // pictureBox1
             // 
@@ -344,6 +354,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(241)))), ((int)(((byte)(179)))));
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBoxCondition);

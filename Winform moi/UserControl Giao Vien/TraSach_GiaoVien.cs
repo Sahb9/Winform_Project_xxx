@@ -24,7 +24,7 @@ namespace Winform_moi
         }
         public void loadForm()
         {
-            string sql = "SELECT BookName,Quantity,status FROM ThongTinSachMuon(" + 990 + ")";
+            string sql = "SELECT BookName,Quantity,status FROM ThongTinSachMuon(" + StatisID.GlobalUserId + ")";
             dataGridView1.DataSource = book.getBook(sql);
         }
         public void setUpdata()
@@ -94,8 +94,8 @@ namespace Winform_moi
                 DateTime date = DateTime.ParseExact(dataGridView2.Rows[i].Cells[2].Value.ToString(), "dd/MM/yyyy", null);
                 string con = dataGridView2.Rows[i].Cells[3].Value.ToString();
                 //Phạt sách đối với sinh viên
-                book.phatSach(191100, date, bookname, slg, con);
-                if (book.traSach(191100, date, bookname, slg))
+                book.phatSach(StatisID.GlobalUserId, date, bookname, slg, con);
+                if (book.traSach(StatisID.GlobalUserId, date, bookname, slg))
                 {
                     kt = 1;
                 }

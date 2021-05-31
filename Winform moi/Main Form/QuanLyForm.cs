@@ -22,7 +22,7 @@ namespace Winform_moi
         Manager ma = new Manager();
         private void quanLySach1_Load(object sender, EventArgs e)
         {
-            LoadAnh();
+           
         }
         void LoadAnh()
         {
@@ -30,15 +30,16 @@ namespace Winform_moi
             DataTable table= ma.getTable(sql);
             //
            
-            //byte[] pic = (byte[])table.Rows[0][6];
-            //MemoryStream picture = new MemoryStream(pic);
-            //pictureBox1.Image = Image.FromStream(picture);
-            ////Tùy chỉnh Zoom
-            //pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            byte[] pic = (byte[])table.Rows[0][6];
+            MemoryStream picture = new MemoryStream(pic);
+            pictureBox1.Image = Image.FromStream(picture);
+            //tùy chỉnh zoom
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+
         }
         private void QuanLyForm_Load(object sender, EventArgs e)
         {
-            
+            LoadAnh();
         }
 
         private void buttonQLSinhVien_Click(object sender, EventArgs e)

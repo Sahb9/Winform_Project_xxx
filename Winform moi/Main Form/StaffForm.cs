@@ -19,6 +19,7 @@ namespace Winform_moi
             InitializeComponent();
         }
         Database db = new Database();
+        Staff staff = new Staff();
         private void buttonCheckIn_Click(object sender, EventArgs e)
         {
             checkIn_Staff1.CheckIn_Staff_Load(sender, e);
@@ -30,10 +31,10 @@ namespace Winform_moi
             checkOut_Staff1.CheckOut_Staff_Load(sender, e);
             checkOut_Staff1.BringToFront();
         }
-        void LoadAnh()
+        public void LoadAnh()
         {
             string sql = "SELECT *FROM Staff WHERE ID =" + StatisID.GlobalUserId;
-            DataTable table = ma.getTable(sql);
+            DataTable table = staff.getTable(sql);
             //
 
             byte[] pic = (byte[])table.Rows[0][7];

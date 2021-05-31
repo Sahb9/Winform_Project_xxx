@@ -76,7 +76,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(588, 394);
+            this.dataGridView1.Size = new System.Drawing.Size(603, 394);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -106,10 +106,11 @@
             this.buttonRenew.Animated = true;
             this.buttonRenew.CheckedState.Parent = this.buttonRenew;
             this.buttonRenew.CustomImages.Parent = this.buttonRenew;
+            this.buttonRenew.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(171)))), ((int)(((byte)(203)))));
             this.buttonRenew.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.buttonRenew.ForeColor = System.Drawing.Color.White;
             this.buttonRenew.HoverState.Parent = this.buttonRenew;
-            this.buttonRenew.Location = new System.Drawing.Point(661, 469);
+            this.buttonRenew.Location = new System.Drawing.Point(661, 392);
             this.buttonRenew.Name = "buttonRenew";
             this.buttonRenew.ShadowDecoration.Parent = this.buttonRenew;
             this.buttonRenew.Size = new System.Drawing.Size(99, 36);
@@ -157,10 +158,10 @@
             this.buttonShowCheckIn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.buttonShowCheckIn.ForeColor = System.Drawing.Color.White;
             this.buttonShowCheckIn.HoverState.Parent = this.buttonShowCheckIn;
-            this.buttonShowCheckIn.Location = new System.Drawing.Point(661, 245);
+            this.buttonShowCheckIn.Location = new System.Drawing.Point(661, 266);
             this.buttonShowCheckIn.Name = "buttonShowCheckIn";
             this.buttonShowCheckIn.ShadowDecoration.Parent = this.buttonShowCheckIn;
-            this.buttonShowCheckIn.Size = new System.Drawing.Size(99, 57);
+            this.buttonShowCheckIn.Size = new System.Drawing.Size(99, 36);
             this.buttonShowCheckIn.TabIndex = 5;
             this.buttonShowCheckIn.Text = "Show CheckIn";
             this.buttonShowCheckIn.Click += new System.EventHandler(this.buttonShowCheckIn_Click);
@@ -174,10 +175,10 @@
             this.buttonShowChecOut.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.buttonShowChecOut.ForeColor = System.Drawing.Color.White;
             this.buttonShowChecOut.HoverState.Parent = this.buttonShowChecOut;
-            this.buttonShowChecOut.Location = new System.Drawing.Point(661, 330);
+            this.buttonShowChecOut.Location = new System.Drawing.Point(661, 308);
             this.buttonShowChecOut.Name = "buttonShowChecOut";
             this.buttonShowChecOut.ShadowDecoration.Parent = this.buttonShowChecOut;
-            this.buttonShowChecOut.Size = new System.Drawing.Size(99, 57);
+            this.buttonShowChecOut.Size = new System.Drawing.Size(99, 36);
             this.buttonShowChecOut.TabIndex = 6;
             this.buttonShowChecOut.Text = "Show CheckOut";
             this.buttonShowChecOut.Click += new System.EventHandler(this.buttonShowChecOut_Click);
@@ -187,10 +188,11 @@
             this.buttonList.Animated = true;
             this.buttonList.CheckedState.Parent = this.buttonList;
             this.buttonList.CustomImages.Parent = this.buttonList;
+            this.buttonList.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(65)))), ((int)(((byte)(72)))));
             this.buttonList.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.buttonList.ForeColor = System.Drawing.Color.White;
             this.buttonList.HoverState.Parent = this.buttonList;
-            this.buttonList.Location = new System.Drawing.Point(661, 412);
+            this.buttonList.Location = new System.Drawing.Point(661, 350);
             this.buttonList.Name = "buttonList";
             this.buttonList.ShadowDecoration.Parent = this.buttonList;
             this.buttonList.Size = new System.Drawing.Size(99, 36);
@@ -212,6 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(241)))), ((int)(((byte)(179)))));
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonShowChecOut);
             this.Controls.Add(this.buttonShowCheckIn);

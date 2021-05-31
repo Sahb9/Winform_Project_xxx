@@ -22,6 +22,14 @@ namespace Winform_moi
             adapter.Fill(table);
             return table;
         }
+        public DataTable getTable(string sql)
+        {
+            SqlCommand command = new SqlCommand(sql, mydb.getConnection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
         public DataTable getStudents(SqlCommand command)
         {
             command.Connection = mydb.getConnection;

@@ -46,7 +46,7 @@ namespace Winform_moi
         }
         public void loadData()
         {
-            string sql = "SELECT * FROM Book WHERE ID_GV = " + 990;
+            string sql = "SELECT * FROM Book WHERE ID_GV = " + StatisID.GlobalUserId;
             dataGridView1.DataSource = book.getBook(sql);
         }
 
@@ -61,7 +61,7 @@ namespace Winform_moi
             {
                 if (!book.checkIDBook(id))
                 {
-                    if (book.insertBook(id, tenbook, loai, soluong, gia, 990))
+                    if (book.insertBook(id, tenbook, loai, soluong, gia, StatisID.GlobalUserId))
                     {
                         MessageBox.Show("New Book has been added", "Add Book", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         loadBook();

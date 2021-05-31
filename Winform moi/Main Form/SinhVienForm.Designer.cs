@@ -29,18 +29,22 @@
         private void InitializeComponent()
         {
             this.Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.buttonImage = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.buttonTinhTrang = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.buttonTra = new Guna.UI2.WinForms.Guna2Button();
             this.buttonMuon = new Guna.UI2.WinForms.Guna2Button();
             this.Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.tinhTrang_SinhVien1 = new Winform_moi.TinhTrang_SinhVien();
             this.muonSach_SinhVien1 = new Winform_moi.MuonSach_SinhVien();
             this.traSach_SinhVien1 = new Winform_moi.TraSach_SinhVien();
-            this.buttonImage = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.pictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.panelX = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelX.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel1
@@ -48,7 +52,7 @@
             this.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(183)))), ((int)(((byte)(255)))));
             this.Panel1.Controls.Add(this.buttonImage);
             this.Panel1.Controls.Add(this.buttonTinhTrang);
-            this.Panel1.Controls.Add(this.guna2CirclePictureBox1);
+            this.Panel1.Controls.Add(this.pictureBox1);
             this.Panel1.Controls.Add(this.buttonTra);
             this.Panel1.Controls.Add(this.buttonMuon);
             this.Panel1.Location = new System.Drawing.Point(0, 0);
@@ -57,6 +61,22 @@
             this.Panel1.Size = new System.Drawing.Size(167, 540);
             this.Panel1.TabIndex = 3;
             this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // buttonImage
+            // 
+            this.buttonImage.CheckedState.Parent = this.buttonImage;
+            this.buttonImage.CustomImages.Parent = this.buttonImage;
+            this.buttonImage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(112)))), ((int)(((byte)(85)))));
+            this.buttonImage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonImage.ForeColor = System.Drawing.Color.White;
+            this.buttonImage.HoverState.Parent = this.buttonImage;
+            this.buttonImage.Location = new System.Drawing.Point(41, 114);
+            this.buttonImage.Name = "buttonImage";
+            this.buttonImage.ShadowDecoration.Parent = this.buttonImage;
+            this.buttonImage.Size = new System.Drawing.Size(86, 26);
+            this.buttonImage.TabIndex = 15;
+            this.buttonImage.Text = "Edit Image";
+            this.buttonImage.Click += new System.EventHandler(this.buttonImage_Click);
             // 
             // buttonTinhTrang
             // 
@@ -72,17 +92,6 @@
             this.buttonTinhTrang.TabIndex = 8;
             this.buttonTinhTrang.Text = "Tình trạng Sinh Viên";
             this.buttonTinhTrang.Click += new System.EventHandler(this.buttonTinhTrang_Click);
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(143, 96);
-            this.guna2CirclePictureBox1.TabIndex = 7;
-            this.guna2CirclePictureBox1.TabStop = false;
-            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // buttonTra
             // 
@@ -116,6 +125,7 @@
             // 
             // Panel2
             // 
+            this.Panel2.Controls.Add(this.panelX);
             this.Panel2.Controls.Add(this.tinhTrang_SinhVien1);
             this.Panel2.Controls.Add(this.muonSach_SinhVien1);
             this.Panel2.Controls.Add(this.traSach_SinhVien1);
@@ -150,20 +160,37 @@
             this.traSach_SinhVien1.TabIndex = 0;
             this.traSach_SinhVien1.Load += new System.EventHandler(this.traSach_SinhVien1_Load_1);
             // 
-            // buttonImage
+            // pictureBox1
             // 
-            this.buttonImage.CheckedState.Parent = this.buttonImage;
-            this.buttonImage.CustomImages.Parent = this.buttonImage;
-            this.buttonImage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(112)))), ((int)(((byte)(85)))));
-            this.buttonImage.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.buttonImage.ForeColor = System.Drawing.Color.White;
-            this.buttonImage.HoverState.Parent = this.buttonImage;
-            this.buttonImage.Location = new System.Drawing.Point(41, 114);
-            this.buttonImage.Name = "buttonImage";
-            this.buttonImage.ShadowDecoration.Parent = this.buttonImage;
-            this.buttonImage.Size = new System.Drawing.Size(86, 26);
-            this.buttonImage.TabIndex = 15;
-            this.buttonImage.Text = "Edit Image";
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pictureBox1.ShadowDecoration.Parent = this.pictureBox1;
+            this.pictureBox1.Size = new System.Drawing.Size(143, 96);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
+            // 
+            // panelX
+            // 
+            this.panelX.Controls.Add(this.pictureBox3);
+            this.panelX.FillColor = System.Drawing.Color.Coral;
+            this.panelX.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(93)))), ((int)(((byte)(156)))));
+            this.panelX.Location = new System.Drawing.Point(1, 2);
+            this.panelX.Name = "panelX";
+            this.panelX.ShadowDecoration.Parent = this.panelX;
+            this.panelX.Size = new System.Drawing.Size(830, 537);
+            this.panelX.TabIndex = 6;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Winform_moi.Properties.Resources._1535317867_photofunky2;
+            this.pictureBox3.Location = new System.Drawing.Point(124, 169);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(493, 192);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // SinhVienForm
             // 
@@ -176,8 +203,10 @@
             this.Text = "SinhVienForm";
             this.Load += new System.EventHandler(this.SinhVienForm_Load);
             this.Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelX.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -185,7 +214,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel Panel1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button buttonTra;
         private Guna.UI2.WinForms.Guna2Button buttonMuon;
         private Guna.UI2.WinForms.Guna2Panel Panel2;
@@ -194,5 +223,7 @@
         private TinhTrang_SinhVien tinhTrang_SinhVien1;
         private MuonSach_SinhVien muonSach_SinhVien1;
         private Guna.UI2.WinForms.Guna2GradientTileButton buttonImage;
+        private Guna.UI2.WinForms.Guna2GradientPanel panelX;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

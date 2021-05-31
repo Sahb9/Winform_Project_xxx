@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.buttonImage = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.buttonDanhSach = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.buttonTra = new Guna.UI2.WinForms.Guna2Button();
             this.buttonChoMuon = new Guna.UI2.WinForms.Guna2Button();
             this.buttonMuon = new Guna.UI2.WinForms.Guna2Button();
             this.Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelX = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.sach_GiaoVien1 = new Winform_moi.Sach_GiaoVien();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.sach_GiaoVien1 = new Winform_moi.Sach_GiaoVien();
             this.traSach_GiaoVien1 = new Winform_moi.TraSach_GiaoVien();
             this.choMuon_GiaoVien1 = new Winform_moi.ChoMuon_GiaoVien();
             this.muon_GiaoVien1 = new Winform_moi.Muon_GiaoVien();
-            this.buttonImage = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panel2.SuspendLayout();
             this.panelX.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel1
@@ -68,6 +68,22 @@
             this.Panel1.Size = new System.Drawing.Size(167, 540);
             this.Panel1.TabIndex = 3;
             // 
+            // buttonImage
+            // 
+            this.buttonImage.CheckedState.Parent = this.buttonImage;
+            this.buttonImage.CustomImages.Parent = this.buttonImage;
+            this.buttonImage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(112)))), ((int)(((byte)(85)))));
+            this.buttonImage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonImage.ForeColor = System.Drawing.Color.White;
+            this.buttonImage.HoverState.Parent = this.buttonImage;
+            this.buttonImage.Location = new System.Drawing.Point(39, 116);
+            this.buttonImage.Name = "buttonImage";
+            this.buttonImage.ShadowDecoration.Parent = this.buttonImage;
+            this.buttonImage.Size = new System.Drawing.Size(86, 26);
+            this.buttonImage.TabIndex = 15;
+            this.buttonImage.Text = "Edit Image";
+            this.buttonImage.Click += new System.EventHandler(this.buttonImage_Click);
+            // 
             // buttonDanhSach
             // 
             this.buttonDanhSach.CheckedState.Parent = this.buttonDanhSach;
@@ -82,16 +98,6 @@
             this.buttonDanhSach.TabIndex = 7;
             this.buttonDanhSach.Text = "Danh sách đã mượn";
             this.buttonDanhSach.Click += new System.EventHandler(this.buttonDanhSach_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pictureBox1.ShadowDecoration.Parent = this.pictureBox1;
-            this.pictureBox1.Size = new System.Drawing.Size(143, 96);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // buttonTra
             // 
@@ -163,24 +169,6 @@
             this.panelX.Size = new System.Drawing.Size(830, 537);
             this.panelX.TabIndex = 5;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Winform_moi.Properties.Resources._1535317867_photofunky2;
-            this.pictureBox3.Location = new System.Drawing.Point(124, 169);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(493, 192);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // sach_GiaoVien1
-            // 
-            this.sach_GiaoVien1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(136)))), ((int)(((byte)(243)))));
-            this.sach_GiaoVien1.Location = new System.Drawing.Point(3, 3);
-            this.sach_GiaoVien1.Name = "sach_GiaoVien1";
-            this.sach_GiaoVien1.Size = new System.Drawing.Size(833, 540);
-            this.sach_GiaoVien1.TabIndex = 4;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.pictureBox2);
@@ -189,15 +177,13 @@
             this.panel3.Size = new System.Drawing.Size(94, 284);
             this.panel3.TabIndex = 3;
             // 
-            // pictureBox2
+            // sach_GiaoVien1
             // 
-            this.pictureBox2.Image = global::Winform_moi.Properties.Resources._1535317867_photofunky1;
-            this.pictureBox2.Location = new System.Drawing.Point(54, 104);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(697, 233);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.sach_GiaoVien1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(136)))), ((int)(((byte)(243)))));
+            this.sach_GiaoVien1.Location = new System.Drawing.Point(3, 3);
+            this.sach_GiaoVien1.Name = "sach_GiaoVien1";
+            this.sach_GiaoVien1.Size = new System.Drawing.Size(833, 540);
+            this.sach_GiaoVien1.TabIndex = 4;
             // 
             // traSach_GiaoVien1
             // 
@@ -220,20 +206,35 @@
             this.muon_GiaoVien1.Size = new System.Drawing.Size(833, 540);
             this.muon_GiaoVien1.TabIndex = 0;
             // 
-            // buttonImage
+            // pictureBox3
             // 
-            this.buttonImage.CheckedState.Parent = this.buttonImage;
-            this.buttonImage.CustomImages.Parent = this.buttonImage;
-            this.buttonImage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(112)))), ((int)(((byte)(85)))));
-            this.buttonImage.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.buttonImage.ForeColor = System.Drawing.Color.White;
-            this.buttonImage.HoverState.Parent = this.buttonImage;
-            this.buttonImage.Location = new System.Drawing.Point(39, 116);
-            this.buttonImage.Name = "buttonImage";
-            this.buttonImage.ShadowDecoration.Parent = this.buttonImage;
-            this.buttonImage.Size = new System.Drawing.Size(86, 26);
-            this.buttonImage.TabIndex = 15;
-            this.buttonImage.Text = "Edit Image";
+            this.pictureBox3.Image = global::Winform_moi.Properties.Resources._1535317867_photofunky2;
+            this.pictureBox3.Location = new System.Drawing.Point(124, 169);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(493, 192);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Winform_moi.Properties.Resources._1535317867_photofunky1;
+            this.pictureBox2.Location = new System.Drawing.Point(54, 104);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(697, 233);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pictureBox1.ShadowDecoration.Parent = this.pictureBox1;
+            this.pictureBox1.Size = new System.Drawing.Size(143, 96);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // GiaoVienForm
             // 
@@ -247,12 +248,12 @@
             this.Text = "GiaoVienForm";
             this.Load += new System.EventHandler(this.GiaoVienForm_Load);
             this.Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Panel2.ResumeLayout(false);
             this.panelX.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

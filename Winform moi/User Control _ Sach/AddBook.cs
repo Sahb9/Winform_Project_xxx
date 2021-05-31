@@ -76,5 +76,10 @@ namespace Winform_moi
         {
 
         }
+
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

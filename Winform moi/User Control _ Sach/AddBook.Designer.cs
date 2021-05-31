@@ -65,6 +65,7 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(766, 364);
             this.guna2GroupBox1.TabIndex = 1;
             this.guna2GroupBox1.Text = "AddBook";
+            this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
             // 
             // buttonAdd
             // 

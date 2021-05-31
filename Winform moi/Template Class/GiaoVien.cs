@@ -12,6 +12,29 @@ namespace Winform_moi
      class GiaoVien
     {
         Database mydb = new Database();
+        public bool getData(string sql)
+        {
+            SqlCommand command = new SqlCommand(sql, mydb.getConnection);
+            mydb.openConnection();
+            if ((command.ExecuteNonQuery() == 1))
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+        }
+        public DataTable getTable(string sql)
+        {
+            SqlCommand command = new SqlCommand(sql, mydb.getConnection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
         public bool insertUserTeacher(int id, string name, string gender, int phone, string address, MemoryStream picture, string user, string pass)
         {
             SqlCommand command = new SqlCommand("INSERT INTO users_teacher( ID, Name, Gender, Phone, Address,Picture,Username,Password )"

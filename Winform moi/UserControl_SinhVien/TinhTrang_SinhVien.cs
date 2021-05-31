@@ -30,10 +30,10 @@ namespace Winform_moi
         Book book = new Book();
         public void TinhTrang_SinhVien_Load(object sender, EventArgs e)
         {
-            string sql = "select *from ThongTinSachMuon(" + 191100 + ")";
+            string sql = "select *from ThongTinSachMuon(" + StatisID.GlobalUserId + ")";
             dataGridView1.DataSource = book.getBook(sql);
 
-            string sql2 = "SELECT *FROM phatsinhvien WHERE ID= " + 191100;
+            string sql2 = "SELECT *FROM phatsinhvien WHERE ID= " + StatisID.GlobalUserId;
             dataGridView2.DataSource = book.getBook(sql2);
         }
     }

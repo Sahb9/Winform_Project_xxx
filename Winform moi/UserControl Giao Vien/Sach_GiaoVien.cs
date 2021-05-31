@@ -19,8 +19,12 @@ namespace Winform_moi
         Book book = new Book();
         public void Sach_GiaoVien_Load(object sender, EventArgs e)
         {
-            string sql = "select *from ThongTinSachMuon(" + 990 + ")";
+           
+            string sql = "select *from ThongTinSachMuon(" + StatisID.GlobalUserId + ")";
             dataGridView1.DataSource = book.getBook(sql);
+
+            string sql2 = "SELECT *FROM phatsinhvien WHERE ID= " + StatisID.GlobalUserId;
+            dataGridView2.DataSource = book.getBook(sql2);
         }
     }
 }

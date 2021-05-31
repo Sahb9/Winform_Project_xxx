@@ -51,7 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Manager.cs" />
+    <Compile Include="Template Class\Manager.cs" />
+    <Compile Include="Template Class\Staff.cs" />
     <Compile Include="Template Class\CheckIn.cs" />
     <Compile Include="Template Class\CheckOut.cs" />
     <Compile Include="UserControl_Staff\CheckIn_Staff.cs">
@@ -373,6 +374,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\issueBook1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flippingbook1.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
